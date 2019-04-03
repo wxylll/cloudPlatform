@@ -16,10 +16,4 @@
                 http://www.springframework.org/schema/aop
                 http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <bean id="testService" class="cn.hawkeye.service.impl.TestServiceImpl"/>
-
-    <bean id="test2Service" class="cn.hawkeye.service.impl.Test2ServiceImpl"/>
-
-    <bean id="text3Service" class="cn.hawkeye.service.impl.Text3Servicelmpl"/>
-
 </beans>
