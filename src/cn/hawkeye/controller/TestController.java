@@ -27,7 +27,7 @@ public class TestController {
 
     @RequestMapping("/test2")
     public String test2() {
-        System.out.println(testService.count());
+        System.out.println(test2Service.count());
         return "test";
     }
 
