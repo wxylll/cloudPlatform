@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hawkeye.mapper.UserMapper">
+
+    <insert id="add" parameterType="cn.hawkeye.po.User">
+        insert into users values(#{id},#{username},#{password},#{jurisdiction})
+    </insert>
+
+    <delete id="delete" parameterType="cn.hawkeye.po.User">
+        delete from users where username = #{username}
+    </delete>
+
+    <select id="findAll" resultType="cn.hawkeye.po.User">
+        select * from users
+    </select>
+
+    <select id="findByUsername" parameterType="String" resultType="cn.hawkeye.po.User">
+        select * from users where username = #{value}
+    </select>
+
+</mapper>

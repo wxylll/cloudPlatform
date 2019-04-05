@@ -13,7 +13,8 @@
     <mvc:annotation-driven/>
 
     <!--组件扫描-->
-    <context:component-scan base-package="cn.hawkeye.controller"/>
+    <context:component-scan base-package="cn.hawkeye.controller.reception"/>
+    <context:component-scan base-package="cn.hawkeye.controller.backstage"/>
 
     <!--处理器适配器-->
     <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
