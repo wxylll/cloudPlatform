@@ -38,7 +38,7 @@
     <!--mapper扫描器-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!--扫描包路径-->
-        <property name="basePackage" value="cn.hawkeye.mapper"/>
+        <property name="basePackage" value="cn.baimu.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
     

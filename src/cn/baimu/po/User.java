@@ -1,4 +1,4 @@
-package cn.hawkeye.po;
+package cn.baimu.po;
 
 /**
  * 前台用户信息封装

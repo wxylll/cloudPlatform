@@ -1,7 +1,7 @@
-package cn.hawkeye.controller.reception;
+package cn.baimu.controller.reception;
 
-import cn.hawkeye.po.User;
-import cn.hawkeye.service.UserService;
+import cn.baimu.po.User;
+import cn.baimu.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
