@@ -1,6 +1,6 @@
-package cn.hawkeye.service;
+package cn.baimu.service;
 
-import cn.hawkeye.po.User;
+import cn.baimu.po.User;
 
 import java.util.List;
 

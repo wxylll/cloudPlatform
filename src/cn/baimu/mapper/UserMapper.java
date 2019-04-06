@@ -1,6 +1,6 @@
-package cn.hawkeye.mapper;
+package cn.baimu.mapper;
 
-import cn.hawkeye.po.User;
+import cn.baimu.po.User;
 
 import java.util.List;
 
