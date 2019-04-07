@@ -11,7 +11,7 @@
     <!--定义别名-->
     <typeAliases>
         <!--批量别名定义-->
-        <package name="cn.hawkeye.po"/>
+        <package name="cn.baimu.po"/>
     </typeAliases>
 
 </configuration>

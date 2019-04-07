@@ -16,6 +16,6 @@
                 http://www.springframework.org/schema/aop
                 http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <bean id="userService" class="cn.hawkeye.service.impl.UserServiceImpl"/>
+    <bean id="userService" class="cn.baimu.service.impl.UserServiceImpl"/>
 
 </beans>
