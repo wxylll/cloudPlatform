@@ -55,7 +55,7 @@ public class LoginController {
     public String test2() {
         List<Outlier> outliers = outlierMapper.findAll();
         for (Outlier outlier : outliers) {
-            System.out.println(outlier.toString());
+            System.out.println(outlier.toString() + "");
         }
         return "index";
     }
