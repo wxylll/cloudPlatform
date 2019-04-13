@@ -8,6 +8,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 前台登录管理
@@ -27,11 +29,22 @@ public class LoginController {
         User user = userService.login(username,password);
         if (user != null) {
             httpSession.setAttribute("receptionUser",user);
-            return "index";
+            List<String> string = new ArrayList();
+            string.add("王府井");
+            string.add("长安大厦");
+            string.add("天安门广场");
+            httpSession.setAttribute("position", string);
+            return "jsps/test";
         }else {
             model.addAttribute("loginError","用户名或密码错误！");
             return "jsps/reception/login/login";
         }
+    }
+
+    @RequestMapping("/test")
+    public String test() {
+        System.out.println("111111111");
+        return "index";
     }
 
 }

@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: zh
@@ -15,63 +16,32 @@
         body, html,#container {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
     </style>
 </head>
-<body>
-<div id = "container"></div>
-<script src="https://webapi.amap.com/maps?v=1.4.13&key=2778de5c45eaa7653553c3d919b956c2"></script>
+<body >
+    <div id = "container">
+        <div id="cen" style="width: 500px;height:500px;margin-left:100px;background-color: red;z-index: 1000;position: absolute; visibility: hidden">
+            <iframe name="cenif"></iframe>
+        </div>
+    </div>
 <script type="text/javascript">
     var map,markers;
-    AMap.plugin('AMap.Geocoder', function() {
-        var geocoder = new AMap.Geocoder();
-        geocoder.getLocation('长春工业大学', function (status, result) {
-            if (status === 'complete' && result.info === 'OK') {
 
-                // 经纬度
-                var lng = result.geocodes[0].location.lng;
-                var lat = result.geocodes[0].location.lat;
+    window.init = function() {
+        createMap('container','${sessionScope.get('receptionUser').jurisdiction}');
+    }
 
-                // 地图实例
-                map = new AMap.Map('container', {
-                    resizeEnable: true, // 允许缩放
-                    viewMode: '3D',
-                    pitch: 60,
-                    center: [lng, lat], // 设置地图的中心点
-                    zoom: 15 　　　　　　 // 设置地图的缩放级别，0 - 20
-                });
-            }
-        });
-    });
-    markers = [{address:'长春工业大学'},
-        {address:'长春 南湖广场'},
-        {address:'长春 远创国际'}];
-    markers.forEach(
-        function(item) {
-            AMap.plugin('AMap.Geocoder', function () {
-                var geocoder = new AMap.Geocoder();
-                geocoder.getLocation(item.address, function (status, result) {
-                    if (status === 'complete' && result.info === 'OK') {
+    function test(element) {
+        //自适应标记点
+         map.setFitView();
+         document.getElementById('cen').style.visibility = 'visible';
+         element.firstElementChild.submit();
+    }
 
-                        // 经纬度
-                        var lng = result.geocodes[0].location.lng;
-                        var lat = result.geocodes[0].location.lat;
+    function test1(dom) {
+        dom.style.backgroundColor = 'green';
+    }
 
-                        var endIcon = "<div style='width:20px;height:20px;background-color: red;' onclick='test()'><img width='20px' src='C:/Users/zh/Desktop/temp/18944502-ggg8.jpg'/></div>";
-                        // 添加标记
-                        var marker = new AMap.Marker({
-                            //content: endIcon,
-                            map: map,
-                            position: new AMap.LngLat(lng, lat),   // 经纬度
-                            offset: new AMap.Pixel(-10, -20)
-                        });
-                    } else {
-                        console.log('定位失败！');
-                    }
-                });
-            });
-        }
-    );
-    map.setFitView();
-
-    function test() {
+    function test2(dom) {
+        dom.style.backgroundColor = 'red';
     }
 
     function createMap(mapId, centerAddress) {
@@ -92,6 +62,11 @@
                         center: [lng, lat], // 设置地图的中心点
                         zoom: 15 　　　　　　 // 设置地图的缩放级别，0 - 20
                     });
+                    //标记监控点
+                    var arr = new Array("王府井","长安大厦","天安门广场");
+                    for(var pos in arr) {
+                        markLocation('${sessionScope.get('receptionUser').jurisdiction}' + ' ' + arr[pos]);
+                    }
                 }
             });
         });
@@ -107,7 +82,9 @@
                     var lng = result.geocodes[0].location.lng;
                     var lat = result.geocodes[0].location.lat;
 
-                    var endIcon = "<div style='width:20px;height:20px;background-color: red;' onclick='test()'><img width='20px' src='C:/Users/zh/Desktop/temp/18944502-ggg8.jpg'/></div>";
+                    var endIcon = "<div onmouseover='test1(this)' onmouseleave='test2(this)' style='width:20px;height:20px;background-color: red;' onclick='test(this)'>"
+                            + "<form method='post' target='cenif' action='${pageContext.request.contextPath}/test.action'></form>"
+                            + "</div>";
                     // 添加标记
                     var marker = new AMap.Marker({
                         content:endIcon,
@@ -123,6 +100,7 @@
     }
 
 </script>
+<script src="https://webapi.amap.com/maps?v=1.4.13&key=2778de5c45eaa7653553c3d919b956c2&callback=init"></script>
 </body>
 </html>
 
