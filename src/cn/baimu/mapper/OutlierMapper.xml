@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.baimu.mapper.OutlierMapper">
+
+    <select id="findAll" resultType="cn.baimu.po.Outlier">
+        select oid,position,(select categoryName from positioncategory as p where p.pcid = o.pcid) positionCategory,
+        startTime,duration,maxFlow,averageFlow,video,(select schemeName from scheme as s where s.sid = o.sid) scheme,numberOfSecurity from outliers as o;
+    </select>
+
+    <select id="combinationQuery" resultType="cn.baimu.po.Outlier">
+        select oid,position,(select categoryName from positioncategory as p where p.pcid = o.pcid) positionCategory,
+        startTime,duration,maxFlow,averageFlow,video,(select schemeName from scheme as s where s.sid = o.sid) scheme,numberOfSecurity from outliers as o
+        where 1 = 1
+        <if test="arg0!=null">
+            and o.position like '%${arg0}%'
+        </if>
+        <if test="arg1!=null">
+            and o.startTime &gt; #{arg1}
+        </if>
+        <if test="arg2!=null">
+            and o.startTime &lt; #{arg2}
+        </if>
+    </select>
+
+</mapper>
