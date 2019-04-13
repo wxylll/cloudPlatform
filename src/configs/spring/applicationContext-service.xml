@@ -18,4 +18,6 @@
 
     <bean id="userService" class="cn.baimu.service.impl.UserServiceImpl"/>
 
+    <bean id="edgeTerminalService" class="cn.baimu.service.impl.EdgeTerminalServiceImpl"/>
+
 </beans>

@@ -10,6 +10,6 @@ import java.util.List;
 public interface SecurityStaffMapper {
 
     //根据在职地点查询安保人员
-    public List<SecurityStaff> findSecurityStaffByWorkPlace(String workPlace);
+    public List<SecurityStaff> findSecurityStaffByWorkPlace(String workPlace) throws Exception;
 
 }

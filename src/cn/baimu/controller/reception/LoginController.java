@@ -1,8 +1,10 @@
 package cn.baimu.controller.reception;
 
 import cn.baimu.mapper.OutlierMapper;
+import cn.baimu.po.EdgeTerminal;
 import cn.baimu.po.Outlier;
 import cn.baimu.po.User;
+import cn.baimu.service.EdgeTerminalService;
 import cn.baimu.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -10,7 +12,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpSession;
-import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -22,20 +24,19 @@ public class LoginController {
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private EdgeTerminalService edgeTerminalService;
 
     /**
      *登录
      */
     @RequestMapping("/login")
-    public String login(String username, String password, Model model, HttpSession httpSession) {
+    public String login(String username, String password, Model model, HttpSession httpSession) throws Exception {
         User user = userService.login(username,password);
         if (user != null) {
             httpSession.setAttribute("receptionUser",user);
-            List<String> string = new ArrayList();
-            string.add("王府井");
-            string.add("长安大厦");
-            string.add("天安门广场");
-            httpSession.setAttribute("position", string);
+            List<EdgeTerminal> edgeTerminals = edgeTerminalService.getEdgeTerminals(user.getId());
+            httpSession.setAttribute("jurisdiction", edgeTerminals);
             return "jsps/test";
         }else {
             model.addAttribute("loginError","用户名或密码错误！");
@@ -53,7 +54,12 @@ public class LoginController {
     private OutlierMapper outlierMapper;
     @RequestMapping("/test2")
     public String test2() {
-        List<Outlier> outliers = outlierMapper.findAll();
+        List<Outlier> outliers = null;
+        try {
+            outliers = outlierMapper.combinationQuery("北京",null,new Date());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         for (Outlier outlier : outliers) {
             System.out.println(outlier.toString() + "");
         }
