@@ -44,6 +44,7 @@
         dom.style.backgroundColor = 'red';
     }
 
+    //创建地图
     function createMap(mapId, centerAddress) {
         AMap.plugin('AMap.Geocoder', function() {
             var geocoder = new AMap.Geocoder();
@@ -72,6 +73,7 @@
         });
     }
 
+    //标记地点
     function markLocation(address) {
         AMap.plugin('AMap.Geocoder', function() {
             var geocoder = new AMap.Geocoder();

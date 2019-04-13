@@ -1,5 +1,7 @@
 package cn.baimu.controller.reception;
 
+import cn.baimu.mapper.OutlierMapper;
+import cn.baimu.po.Outlier;
 import cn.baimu.po.User;
 import cn.baimu.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,6 +46,17 @@ public class LoginController {
     @RequestMapping("/test")
     public String test() {
         System.out.println("111111111");
+        return "index";
+    }
+
+    @Autowired
+    private OutlierMapper outlierMapper;
+    @RequestMapping("/test2")
+    public String test2() {
+        List<Outlier> outliers = outlierMapper.findAll();
+        for (Outlier outlier : outliers) {
+            System.out.println(outlier.toString());
+        }
         return "index";
     }
 
