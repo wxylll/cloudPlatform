@@ -6,4 +6,8 @@
         select * from positioncategory;
     </select>
 
+    <insert id="add" parameterType="cn.baimu.po.PositionCategory">
+        insert into positioncategory values(#{pcid},#{categoryName})
+    </insert>
+
 </mapper>

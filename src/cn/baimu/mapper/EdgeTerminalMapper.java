@@ -4,6 +4,9 @@ import cn.baimu.po.EdgeTerminal;
 
 import java.util.List;
 
+/**
+ * EdgeTerminalMapper
+ */
 public interface EdgeTerminalMapper {
 
     /**

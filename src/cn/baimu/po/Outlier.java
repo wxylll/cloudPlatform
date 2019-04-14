@@ -8,14 +8,32 @@ import java.util.Date;
 public class Outlier {
     private String oid; //异常数据id
     private String position; //异常发生地点
+    private String pcid; //地点所属分类id
     private String positionCategory; //地点所属分类
     private Date startTime; //异常开始时间
     private int duration; //异常持续时间
     private int maxFlow; //最大人流
     private int averageFlow; //平均人流
     private String video; //视频文件路径
+    private String sid; //采用方案id
     private String scheme; //采用方案
     private int numberOfSecurity; //参与疏导的安保人员数量
+
+    public String getPcid() {
+        return pcid;
+    }
+
+    public void setPcid(String pcid) {
+        this.pcid = pcid;
+    }
+
+    public String getSid() {
+        return sid;
+    }
+
+    public void setSid(String sid) {
+        this.sid = sid;
+    }
 
     public String getPositionCategory() {
         return positionCategory;
@@ -97,19 +115,4 @@ public class Outlier {
         this.numberOfSecurity = numberOfSecurity;
     }
 
-    @Override
-    public String toString() {
-        return "Outlier{" +
-                "oid='" + oid + '\'' +
-                ", position='" + position + '\'' +
-                ", positionCategory='" + positionCategory + '\'' +
-                ", startTime=" + startTime +
-                ", duration=" + duration +
-                ", maxFlow=" + maxFlow +
-                ", averageFlow=" + averageFlow +
-                ", video='" + video + '\'' +
-                ", scheme='" + scheme + '\'' +
-                ", numberOfSecurity=" + numberOfSecurity +
-                '}';
-    }
 }

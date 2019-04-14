@@ -4,6 +4,9 @@ import cn.baimu.po.EdgeTerminal;
 
 import java.util.List;
 
+/**
+ * 边缘端service
+ */
 public interface EdgeTerminalService {
 
     /**

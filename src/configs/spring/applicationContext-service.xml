@@ -20,4 +20,6 @@
 
     <bean id="edgeTerminalService" class="cn.baimu.service.impl.EdgeTerminalServiceImpl"/>
 
+    <bean id="outlierService" class="cn.baimu.service.impl.OutlierServiceImpl"/>
+
 </beans>

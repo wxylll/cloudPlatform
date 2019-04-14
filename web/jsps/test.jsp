@@ -2,107 +2,89 @@
 <%--
   Created by IntelliJ IDEA.
   User: zh
-  Date: 2019/4/7
-  Time: 9:23
+  Date: 2019/4/14
+  Time: 11:03
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Title</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
-    <style type="text/css">
-        body, html,#container {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
-    </style>
+    <script src="${pageContext.request.contextPath}/js/echarts.js"></script>
 </head>
-<body >
-    <div id = "container">
-        <div id="cen" style="width: 500px;height:500px;margin-left:100px;background-color: red;z-index: 1000;position: absolute; visibility: hidden">
-            <iframe name="cenif"></iframe>
-        </div>
-    </div>
-<script type="text/javascript">
-    var map,markers;
+<body>
+    <div id="chart" style="width: 100%; height: 500px; background-color: white"></div>
+    <div id="chart1" style="width: 100%; height: 500px; background-color: white"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('chart'));
+        var myChart1 = echarts.init(document.getElementById('chart1'));
 
-    window.init = function() {
-        createMap('container','${sessionScope.get('receptionUser').jurisdiction}');
-    }
+        var data1 = [<c:forEach items="${outliers}" var="outlier">"${outlier.position}",</c:forEach>]
+        var data2 = [<c:forEach items="${outliers}" var="outlier">"${outlier.outbreaks}",</c:forEach>]
+        var data3 = [<c:forEach items="${categoryOutliers}" var="outlier">"${outlier.category}",</c:forEach>]
+        var data4 = [<c:forEach items="${categoryOutliers}" var="outlier">{value:"${outlier.outbreaks}",name:"${outlier.category}"},</c:forEach>]
 
-    function test(element) {
-        //自适应标记点
-         map.setFitView();
-         document.getElementById('cen').style.visibility = 'visible';
-         element.firstElementChild.submit();
-    }
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: '各地人流爆发次数'
+            },
+            tooltip: {},
+            legend: {
+                data:['爆发次数']
+            },
+            xAxis: {
+                data: data1
+            },
+            yAxis: {},
+            series: [{
+                name: '爆发次数',
+                type: 'bar',
+                data: data2
+            },
+            {
+                name: '1024',
+                type: 'bar',
+                data: data2
+            }]
+        };
 
-    function test1(dom) {
-        dom.style.backgroundColor = 'green';
-    }
-
-    function test2(dom) {
-        dom.style.backgroundColor = 'red';
-    }
-
-    //创建地图
-    function createMap(mapId, centerAddress) {
-        AMap.plugin('AMap.Geocoder', function() {
-            var geocoder = new AMap.Geocoder();
-            geocoder.getLocation(centerAddress, function (status, result) {
-                if (status === 'complete' && result.info === 'OK') {
-
-                    // 经纬度
-                    var lng = result.geocodes[0].location.lng;
-                    var lat = result.geocodes[0].location.lat;
-
-                    // 地图实例
-                    map = new AMap.Map(mapId, {
-                        resizeEnable: true, // 允许缩放
-                        viewMode: '3D',
-                        pitch: 60,
-                        center: [lng, lat], // 设置地图的中心点
-                        zoom: 15 　　　　　　 // 设置地图的缩放级别，0 - 20
-                    });
-                    //标记监控点
-                    var arr = new Array("王府井","长安大厦","天安门广场");
-                    for(var pos in arr) {
-                        markLocation('${sessionScope.get('receptionUser').jurisdiction}' + ' ' + arr[pos]);
+        var option1 = {
+            title : {
+                text: '各分类人流爆发情况',
+                x:'center'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data:  data3
+            },
+            series : [
+                {
+                    name: '地点分类',
+                    type: 'pie',
+                    radius : '55%',
+                    center: ['50%', '60%'],
+                    data: data4,
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
                     }
                 }
-            });
-        });
-    }
+            ]
+        };
 
-    //标记地点
-    function markLocation(address) {
-        AMap.plugin('AMap.Geocoder', function() {
-            var geocoder = new AMap.Geocoder();
-            geocoder.getLocation(address, function(status, result) {
-                if (status === 'complete' && result.info === 'OK') {
-
-                    // 经纬度
-                    var lng = result.geocodes[0].location.lng;
-                    var lat = result.geocodes[0].location.lat;
-
-                    var endIcon = "<div onmouseover='test1(this)' onmouseleave='test2(this)' style='width:20px;height:20px;background-color: red;' onclick='test(this)'>"
-                            + "<form method='post' target='cenif' action='${pageContext.request.contextPath}/test.action'></form>"
-                            + "</div>";
-                    // 添加标记
-                    var marker = new AMap.Marker({
-                        content:endIcon,
-                        map:map,
-                        position: new AMap.LngLat(lng, lat),   // 经纬度
-                        offset: new AMap.Pixel(-10, -20)
-                    });
-                } else {
-                    console.log('定位失败！');
-                }
-            });
-        });
-    }
-
-</script>
-<script src="https://webapi.amap.com/maps?v=1.4.13&key=2778de5c45eaa7653553c3d919b956c2&callback=init"></script>
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+        myChart1.setOption(option1);
+    </script>
 </body>
 </html>
-

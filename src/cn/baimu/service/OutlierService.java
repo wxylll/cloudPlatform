@@ -1,4 +1,4 @@
-package cn.baimu.mapper;
+package cn.baimu.service;
 
 import cn.baimu.po.Outlier;
 
@@ -7,12 +7,14 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * OutlierMapper
+ * 异常数据service
  */
-public interface OutlierMapper {
+public interface OutlierService {
 
-    /*
-     *获取所有异常数据
+    /**
+     * 返回所有异常数据
+     * @return
+     * @throws Exception
      */
     public List<Outlier> findAll() throws Exception;
 
