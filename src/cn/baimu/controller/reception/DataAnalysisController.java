@@ -28,6 +28,7 @@ public class DataAnalysisController {
         try {
             model.addAttribute("categoryOutliers",outlierService.countCategoryOutbreaks());
             model.addAttribute("outliers",outlierService.countOutbreaks(null));
+            model.addAttribute("outliers2",outlierService.findAll());
             System.out.println(outlierService.countCategoryOutbreaks());
             for (Map<String,Integer> entry : outlierService.countCategoryOutbreaks()) {
                 System.out.println(entry.entrySet());
@@ -38,6 +39,7 @@ public class DataAnalysisController {
         return "jsps/test";
     }
 
+    //创建模拟数据
     @Autowired
     private PositionCategoryMapper positionCategoryMapper;
     @Autowired

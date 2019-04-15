@@ -13,9 +13,34 @@
     <script src="${pageContext.request.contextPath}/js/echarts.js"></script>
 </head>
 <body>
-    <div id="chart" style="width: 100%; height: 500px; background-color: white"></div>
-    <div id="chart1" style="width: 100%; height: 500px; background-color: white"></div>
+    <div style="width: 100%;height: 50px;background-color: black">
+        <div onclick="che2()" style="display:block;height: 100%;width: 50px;background-color: aqua;margin-left: 10px;margin-right: 10px;float: left">图表</div>
+        <div onclick="che1()" style="display:block;height: 100%;width: 50px;background-color: aqua;margin-left: 10px;margin-right: 10px;float: left">数据</div>
+    </div>
+    <div id="div1" style="width: 100%;height: 100%;display: block">
+        <div id="chart" style="width: 100%; height: 500px; background-color: white"></div>
+        <div id="chart1" style="width: 100%; height: 500px; background-color: white"></div>
+    </div>
+    <div id="div2" style="width: 100%;height: 100%;display: none">
+        <table border="1">
+            <tr><td>爆发地点</td><td>地点分类</td><td>开始时间</td><td>持续时间</td><td>最大人流</td><td>平均人流</td><td>视频</td><td>采用方案</td><td>安保人员数量</td></tr>
+            <c:forEach items="${outliers2}" var="outlier">
+                <tr><td>${outlier.position}</td><td>${outlier.positionCategory}</td><td>${outlier.startTime}</td><td>${outlier.duration}</td><td>${outlier.maxFlow}</td><td>${outlier.averageFlow}</td><td>${outlier.video}</td><td>${outlier.scheme}</td><td>${outlier.numberOfSecurity}</td></tr>
+            </c:forEach>
+        </table>
+    </div>
     <script type="text/javascript">
+
+        function che1() {
+            document.getElementById('div1').style.display = 'none';
+            document.getElementById('div2').style.display = 'block';
+        }
+
+        function che2() {
+            document.getElementById('div2').style.display = 'none';
+            document.getElementById('div1').style.display = 'block';
+        }
+
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('chart'));
         var myChart1 = echarts.init(document.getElementById('chart1'));
