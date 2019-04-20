@@ -22,4 +22,20 @@
         </if>
     </select>
 
+    <select id="countOutbreaks" resultType="hashMap">
+        select position,count(*) as outbreaks from outliers
+        <if test="arg0!=null">
+            where startTime &gt; #{arg0}
+        </if>
+        group by position
+    </select>
+
+    <select id="countCategoryOutbreaks" resultType="hashMap">
+        select (select categoryName from positioncategory p where o.pcid = p.pcid) category,count(*) outbreaks from outliers o group by pcid
+    </select>
+
+    <insert id="add" parameterType="cn.baimu.po.Outlier">
+        insert into outliers values(#{oid},#{position},#{pcid},#{startTime},#{duration},#{maxFlow},#{averageFlow},#{video},#{sid},#{numberOfSecurity})
+    </insert>
+
 </mapper>

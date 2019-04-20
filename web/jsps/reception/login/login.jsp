@@ -10,18 +10,24 @@
 <html>
 <head>
     <title>login</title>
+    <link rel="stylesheet" href="login.css" type="text/css">
 </head>
 <body>
-    <div>
+    <center>
+    <div class="login_div">
         <span>${loginError}</span>
+        <img id="logo" src="logo.png"/>
         <form id="loginForm" action="<c:url value="/login.action"/>" method="post">
-            <input id="username" name="username" type="text" placeholder="Username" value="" onfocus="getFocus(this.id);" onblur="noFocus(this.id);"  oninput="change(this.id)"/>
+            &nbsp;
+            <input id="username" name="username" type="text" placeholder="请输入用户名" value="" onfocus="getFocus(this.id);" onblur="noFocus(this.id);"  oninput="change(this.id)"/>
             <span id="nameMsg"></span><br/>
-            <input id="password" name="password" type="text" placeholder="Password" value="" onfocus="getFocus(this.id);" onblur="noFocus(this.id);" oninput="change(this.id)"/>
+
+            <input id="password" name="password" type="text" placeholder="请输入密码" value="" onfocus="getFocus(this.id);" onblur="noFocus(this.id);" oninput="change(this.id)"/>
             <span id="passwordMsg"></span>
         </form>
-        <button  onclick="toSubmit()">登录</button>
+        <button  id="loginbutton" onclick="toSubmit()">登录</button>
     </div>
+    </center>
 </body>
 <script>
     function getFocus(id){
@@ -30,9 +36,9 @@
 
     function noFocus(id){
         if(id == "username"){
-            document.getElementById(id).setAttribute("placeholder","Username");
+            document.getElementById(id).setAttribute("placeholder","请输入用户名");
         }else{
-            document.getElementById(id).setAttribute("placeholder","Password");
+            document.getElementById(id).setAttribute("placeholder","请输入密码");
         }
     }
 

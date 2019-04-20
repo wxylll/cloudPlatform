@@ -31,13 +31,18 @@ public class LoginController {
      *登录
      */
     @RequestMapping("/login")
-    public String login(String username, String password, Model model, HttpSession httpSession) throws Exception {
+    public String login(String username, String password, Model model, HttpSession httpSession){
         User user = userService.login(username,password);
         if (user != null) {
-            httpSession.setAttribute("receptionUser",user);
-            List<EdgeTerminal> edgeTerminals = edgeTerminalService.getEdgeTerminals(user.getId());
+            httpSession.setAttribute("receptionUser",user); //保存用户信息
+            List<EdgeTerminal> edgeTerminals = null;
+            try {
+                edgeTerminals = edgeTerminalService.getEdgeTerminals(user.getId()); //获取用户管辖范围类的边缘端信息
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
             httpSession.setAttribute("jurisdiction", edgeTerminals);
-            return "jsps/test";
+            return "jsps/reception/main";
         }else {
             model.addAttribute("loginError","用户名或密码错误！");
             return "jsps/reception/login/login";

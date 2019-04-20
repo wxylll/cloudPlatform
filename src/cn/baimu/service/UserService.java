@@ -5,7 +5,7 @@ import cn.baimu.po.User;
 import java.util.List;
 
 /**
- * UserService
+ * 前台用户Service
  * @auther wxy
  */
 public interface UserService {
