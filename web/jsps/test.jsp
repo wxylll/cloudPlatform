@@ -29,6 +29,12 @@
             </c:forEach>
         </table>
     </div>
+    <div align="center" id="div3" style="width: 100%; height: 100%; display: none">
+        <iframe name="show" style="width: 100%;height: 100%"></iframe>
+    </div>
+    <form id="from1" action="<c:url value='showDetail.action'/>" target="show">
+        <input id="input1" type="text" name="position" value="">
+    </form>
     <script type="text/javascript">
 
         function che1() {
@@ -109,6 +115,13 @@
 
         // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
+        myChart.on('click',function(param) {
+            document.getElementById('div1').style.display = 'none'
+            document.getElementById('div2').style.display = 'none'
+            document.getElementById('div3').style.display = 'block'
+            document.getElementById('input1').value = param.name;
+            document.getElementById('from1').submit();
+        });
         myChart1.setOption(option1);
     </script>
 </body>

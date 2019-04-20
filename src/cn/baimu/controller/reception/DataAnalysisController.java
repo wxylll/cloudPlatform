@@ -39,6 +39,18 @@ public class DataAnalysisController {
         return "jsps/test";
     }
 
+    @RequestMapping("/showDetail")
+    public String showDetail(String position, Model model) {
+        try {
+            System.out.println(position);
+            model.addAttribute("outliers",outlierService.combinationQuery(position,null,null));
+            model.addAttribute("position",position);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "jsps/test2";
+    }
+
     //创建模拟数据
     @Autowired
     private PositionCategoryMapper positionCategoryMapper;

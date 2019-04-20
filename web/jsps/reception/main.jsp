@@ -14,17 +14,22 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
     <style type="text/css">
         body, html,#container {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
-        .show_div{width: 100%;height: 100%;position: absolute;z-index: 1000;display: none;}
+        .show_div{width: 100%;height: 100%;position: absolute;z-index: 1000;visibility: hidden;}
         .show_div:hover{cursor: default}
     </style>
 </head>
 <body >
     <div id = "container" align="center">
+
         <div id="cen" class="show_div">
-            <div style="width: 60%;height: 80%;margin-top: 5%;background-color: greenyellow;">
-                <iframe name="cenif" style="width: 100%;height: 100%"></iframe>
+            <div id="left" onclick="hidde()" style="height: 100%;width: 0px;background-color: red;float: left;transition: all 1s;-webkit-transition: all .8s"></div>
+            <div id="right" style="height: 1000px;width: 0px;background-color: red;float:right;transition: all 1s;-webkit-transition: all .8s"></div>
+            <div id="center" style="width: 66%;height: 98%;margin-top: -50%;background-color: greenyellow;transition: all 1s;-webkit-transition: all .5s;border-radius: 10px">
+                <iframe name="cenif" style="width: 100%;height: 100%;border: none"></iframe>
             </div>
+
         </div>
+
     </div>
 <script type="text/javascript">
     var map,markers;
@@ -35,9 +40,19 @@
 
     function show(element) {
         //自适应标记点
-         map.setFitView();
-         document.getElementById('cen').style.display = 'block';
-         element.firstElementChild.submit();
+        map.setFitView();
+        document.getElementById('cen').style.visibility = 'visible';
+        document.getElementById('left').style.width = '16%';
+        document.getElementById('right').style.width = '16%';
+        document.getElementById('center').style.marginTop = '.5%';
+        element.firstElementChild.submit();
+    }
+
+    function hidde() {
+        document.getElementById('left').style.width = '0%';
+        document.getElementById('right').style.width = '0%';
+        document.getElementById('center').style.marginTop = '-50%';
+        document.getElementById('cen').style.visibility = 'hidden';
     }
 
     function test1(dom) {
@@ -64,6 +79,7 @@
                         resizeEnable: true, // 允许缩放
                         viewMode: '3D',
                         pitch: 60,
+                        //mapStyle: 'amap://styles/18a28064ad41b5db6d016ebac881a059',
                         center: [lng, lat], // 设置地图的中心点
                         zoom: 15 　　　　　　 // 设置地图的缩放级别，0 - 20
                     });
@@ -89,7 +105,7 @@
                     var lat = result.geocodes[0].location.lat;
 
                     var endIcon = "<div onmouseover='test1(this)' onmouseleave='test2(this)' style='width:20px;height:20px;background-color: red;' onclick='show(this)'>"
-                            + "<form method='post' target='cenif' action='${pageContext.request.contextPath}/test.action'></form>"
+                            + "<form method='post' target='cenif' action='${pageContext.request.contextPath}/showOutliers.action'></form>"
                             + "</div>";
                     // 添加标记
                     var marker = new AMap.Marker({
