@@ -10,13 +10,13 @@
 <html>
 <head>
     <title>login</title>
-    <link rel="stylesheet" href="login.css" type="text/css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/login.css" type="text/css">
 </head>
 <body>
     <center>
     <div class="login_div">
         <span>${loginError}</span>
-        <img id="logo" src="logo.png"/>
+        <img id="logo" src="${pageContext.request.contextPath}/image/logo.png"/>
         <form id="loginForm" action="<c:url value="/login.action"/>" method="post">
             &nbsp;
             <input id="username" name="username" type="text" placeholder="请输入用户名" value="" onfocus="getFocus(this.id);" onblur="noFocus(this.id);"  oninput="change(this.id)"/>

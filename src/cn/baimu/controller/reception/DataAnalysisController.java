@@ -6,12 +6,14 @@ import cn.baimu.po.Outlier;
 import cn.baimu.po.PositionCategory;
 import cn.baimu.po.Scheme;
 import cn.baimu.service.OutlierService;
+import cn.baimu.websocket.handler.WebsocketEndPoint;
 import cn.itcast.commons.CommonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.*;
 
 /**
@@ -19,6 +21,9 @@ import java.util.*;
  */
 @Controller
 public class DataAnalysisController {
+
+    @Autowired
+    private WebsocketEndPoint websocketEndPoint;
 
     @Autowired
     private OutlierService outlierService;
@@ -36,11 +41,16 @@ public class DataAnalysisController {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return "jsps/test";
+        return "jsps/reception/data_analysis/test";
     }
 
-    @RequestMapping("/showDetail")
-    public String showDetail(String position, Model model) {
+    @RequestMapping("/update")
+    public void update(HttpServletResponse response) {
+
+    }
+
+    @RequestMapping("/showDetails")
+    public String showDetails(String position, Model model) {
         try {
             System.out.println(position);
             model.addAttribute("outliers",outlierService.combinationQuery(position,null,null));
@@ -48,7 +58,7 @@ public class DataAnalysisController {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return "jsps/test2";
+        return "jsps/reception/data_analysis/test2";
     }
 
     //创建模拟数据
@@ -59,7 +69,7 @@ public class DataAnalysisController {
     @RequestMapping("/createData")
     public void createData() throws Exception {
         Random random = new Random();
-        String[] positions = {"长春工业大学校门口","长春工业大学食堂","长春工业大学5栋","长春工业大学主楼","长春工业大学图书馆","长春工业大学男厕所","长春工业大学篮球场","长春工业大学足球场"};
+        String[] positions = {"长春工业大学校门口","长春工业大学食堂","长春工业大学5栋","长春工业大学主楼","长春工业大学图书馆","长春工业大学男厕所","长春工业大学篮球场","长春工业大学足球场","北京大学食堂门口"};
         List<PositionCategory> positionCategories = positionCategoryMapper.findAll();
         List<Outlier> list = new ArrayList<>();
         for (int i = 0,size = positionCategories.size(); i < positions.length; i++) {

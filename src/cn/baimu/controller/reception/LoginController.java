@@ -49,26 +49,4 @@ public class LoginController {
         }
     }
 
-    @RequestMapping("/test")
-    public String test() {
-        System.out.println("111111111");
-        return "index";
-    }
-
-    @Autowired
-    private OutlierMapper outlierMapper;
-    @RequestMapping("/test2")
-    public String test2() {
-        List<Outlier> outliers = null;
-        try {
-            outliers = outlierMapper.combinationQuery("北京",null,new Date());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        for (Outlier outlier : outliers) {
-            System.out.println(outlier.toString() + "");
-        }
-        return "index";
-    }
-
 }

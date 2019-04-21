@@ -28,6 +28,7 @@
             where startTime &gt; #{arg0}
         </if>
         group by position
+        order by outbreaks desc
     </select>
 
     <select id="countCategoryOutbreaks" resultType="hashMap">
