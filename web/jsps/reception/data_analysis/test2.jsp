@@ -14,6 +14,7 @@
 </head>
 <body>
     <div>
+        <a href="<c:url value="/showOutliers.action"/> "><img width="3%" src="<c:url value="/image/箭头2.png"/> "/></a>
         <div id="chart" style="width: 100%; height: 500px; background-color: white"></div>
         <div>
             <table border="1">

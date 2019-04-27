@@ -17,4 +17,11 @@ public interface EdgeTerminalMapper {
      */
     public List<EdgeTerminal> findByUid(String uid) throws Exception;
 
+    /**
+     * 新增边缘端
+     * @param edgeTerminal
+     * @throws Exception
+     */
+    public void add(EdgeTerminal edgeTerminal) throws Exception;
+
 }

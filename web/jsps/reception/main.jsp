@@ -16,18 +16,31 @@
         body, html,#container {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
         .show_div{width: 100%;height: 100%;position: absolute;z-index: 1000;visibility: hidden;}
         .show_div:hover{cursor: default}
+        #left {height: 100%;width: 0px;background-color: cadetblue;float: left;transition: all .5s;-webkit-transition: all .5s;box-shadow: 0px 0px 20px rgba(0,0,0,0.5)}
+        #right {height: 1000px;width: 0px;background-color: cadetblue;float:right;transition: all .5s;-webkit-transition: all .5s;box-shadow: 0px 0px 20px rgba(0,0,0,0.5)}
+        #center {position: absolute;left:17%;width: 66%;height: 98%;margin-top: -50%;background-color: white;transition: all .6s;-webkit-transition: all .6s;border-radius: 10px; box-shadow: 0px 0px 20px rgba(0,0,0,0.5);overflow: hidden}
+        #centerIframe {width: 101.8%;height: 95%;border: none;border-radius: 0px 0px 10px 10px;transition: all .6s;-webkit-transition: all .6s;overflow-x: hidden;overflow-y: scroll;}
+        #icon:hover{cursor: pointer}
     </style>
 </head>
-<body >
+<body>
     <div id = "container" align="center">
 
         <div id="cen" class="show_div">
-            <div id="left" onclick="hidde()" style="height: 100%;width: 0px;background-color: red;float: left;transition: all 1s;-webkit-transition: all .8s"></div>
-            <div id="right" style="height: 1000px;width: 0px;background-color: red;float:right;transition: all 1s;-webkit-transition: all .8s"></div>
-            <div id="center" style="width: 66%;height: 98%;margin-top: -50%;background-color: greenyellow;transition: all 1s;-webkit-transition: all .5s;border-radius: 10px">
-                <iframe name="cenif" style="width: 100%;height: 100%;border: none"></iframe>
+            <div id="left">
+                <a><div style="width: 90%;height: 5%;background-color: aqua;margin-top: 10px;overflow: hidden">实时监控</div></a>
+                <a href="<c:url value="/showOutliers.action"/>" target="centerIframe"><div style="width: 90%;height: 5%;background-color: aqua;margin-top: 10px;overflow: hidden">数据分析</div></a>
+                <a href="<c:url value="/showTerminal.action"/>" target="centerIframe"><div style="width: 90%;height: 5%;background-color: aqua;margin-top: 10px;overflow: hidden">边缘端管理</div></a>
+                <a href="<c:url value="/showOutliers.action"/>" target="centerIframe"><div style="width: 90%;height: 5%;background-color: aqua;margin-top: 10px;overflow: hidden">安保人员管理</div></a>
+                <a href="<c:url value="/showOutliers.action"/>" target="centerIframe"><div style="width: 90%;height: 5%;background-color: aqua;margin-top: 10px;overflow: hidden">实时疏导情况</div></a>
             </div>
-
+            <div id="right"></div>
+            <div id="center">
+                <div style="width: 100%;height: 5%;background-color: aquamarine;border-radius: 10px 10px 0px 0px;">
+                    <img id="icon" onclick="hidde()" style="float: right;margin-top: 2px;margin-right: 2px" width="3%" src="<c:url value="/image/箭头2.png"/> ">
+                </div>
+                <iframe id="centerIframe" name="centerIframe"></iframe>
+            </div>
         </div>
 
     </div>
@@ -105,7 +118,7 @@
                     var lat = result.geocodes[0].location.lat;
 
                     var endIcon = "<div onmouseover='test1(this)' onmouseleave='test2(this)' style='width:20px;height:20px;background-color: red;' onclick='show(this)'>"
-                            + "<form method='post' target='cenif' action='${pageContext.request.contextPath}/showOutliers.action'></form>"
+                            + "<form method='post' target='centerIframe' action='${pageContext.request.contextPath}/showDetail.action'></form>"
                             + "</div>";
                     // 添加标记
                     var marker = new AMap.Marker({

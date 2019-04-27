@@ -6,17 +6,17 @@ package cn.baimu.po;
  */
 public class User {
 
-    private String id; //用户id
+    private String uid; //用户id
     private String username; //用户名
     private String password; //密码
     private String jurisdiction; //管辖范围
 
-    public String getId() {
-        return id;
+    public String getUid() {
+        return uid;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setUid(String uid) {
+        this.uid = uid;
     }
 
     public String getUsername() {

@@ -3,7 +3,7 @@
 <mapper namespace="cn.baimu.mapper.EdgeTerminalMapper">
 
     <select id="findByUid" parameterType="String" resultType="cn.baimu.po.EdgeTerminal">
-        select * from edgeterminal where uid = #{value}
+        select *,(select categoryName from positioncategory p where e.pcid = p.pcid) positionCategory from edgeterminal e where uid = #{value}
     </select>
 
 </mapper>
