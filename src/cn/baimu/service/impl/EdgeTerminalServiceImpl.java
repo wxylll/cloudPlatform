@@ -17,4 +17,9 @@ public class EdgeTerminalServiceImpl implements EdgeTerminalService {
         return edgeTerminalMapper.findByUid(uid);
     }
 
+    @Override
+    public void add(EdgeTerminal edgeTerminal) throws Exception {
+        edgeTerminalMapper.add(edgeTerminal);
+    }
+
 }

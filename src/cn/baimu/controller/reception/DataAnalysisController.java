@@ -23,9 +23,6 @@ import java.util.*;
 public class DataAnalysisController {
 
     @Autowired
-    private WebsocketEndPoint websocketEndPoint;
-
-    @Autowired
     private OutlierService outlierService;
 
     @RequestMapping("/showOutliers")
@@ -41,12 +38,7 @@ public class DataAnalysisController {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return "jsps/reception/data_analysis/test";
-    }
-
-    @RequestMapping("/update")
-    public void update(HttpServletResponse response) {
-
+        return "reception/data_analysis/test";
     }
 
     @RequestMapping("/showDetails")
@@ -58,7 +50,7 @@ public class DataAnalysisController {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return "jsps/reception/data_analysis/test2";
+        return "reception/data_analysis/test2";
     }
 
     //创建模拟数据

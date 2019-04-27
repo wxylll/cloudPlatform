@@ -35,6 +35,8 @@
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <!--后缀-->
         <property name="suffix" value=".jsp"/>
+        <!--前缀-->
+        <property name="prefix" value="jsps/"/>
     </bean>
 
 </beans>

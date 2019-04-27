@@ -17,4 +17,11 @@ public interface EdgeTerminalService {
      */
     public List<EdgeTerminal> getEdgeTerminals(String uid) throws Exception;
 
+    /**
+     * 新增边缘端
+     * @param edgeTerminal
+     * @throws Exception
+     */
+    public void add(EdgeTerminal edgeTerminal) throws Exception;
+
 }

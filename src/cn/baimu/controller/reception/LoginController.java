@@ -37,15 +37,15 @@ public class LoginController {
             httpSession.setAttribute("receptionUser",user); //保存用户信息
             List<EdgeTerminal> edgeTerminals = null;
             try {
-                edgeTerminals = edgeTerminalService.getEdgeTerminals(user.getId()); //获取用户管辖范围类的边缘端信息
+                edgeTerminals = edgeTerminalService.getEdgeTerminals(user.getUid()); //获取用户管辖范围类的边缘端信息
             } catch (Exception e) {
                 e.printStackTrace();
             }
             httpSession.setAttribute("jurisdiction", edgeTerminals);
-            return "jsps/reception/main";
+            return "reception/main";
         }else {
             model.addAttribute("loginError","用户名或密码错误！");
-            return "jsps/reception/login/login";
+            return "reception/login/login";
         }
     }
 

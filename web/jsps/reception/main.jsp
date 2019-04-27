@@ -30,7 +30,7 @@
             <div id="left">
                 <a><div style="width: 90%;height: 5%;background-color: aqua;margin-top: 10px;overflow: hidden">实时监控</div></a>
                 <a href="<c:url value="/showOutliers.action"/>" target="centerIframe"><div style="width: 90%;height: 5%;background-color: aqua;margin-top: 10px;overflow: hidden">数据分析</div></a>
-                <a href="<c:url value="/showOutliers.action"/>" target="centerIframe"><div style="width: 90%;height: 5%;background-color: aqua;margin-top: 10px;overflow: hidden">边缘端管理</div></a>
+                <a href="<c:url value="/showTerminal.action"/>" target="centerIframe"><div style="width: 90%;height: 5%;background-color: aqua;margin-top: 10px;overflow: hidden">边缘端管理</div></a>
                 <a href="<c:url value="/showOutliers.action"/>" target="centerIframe"><div style="width: 90%;height: 5%;background-color: aqua;margin-top: 10px;overflow: hidden">安保人员管理</div></a>
                 <a href="<c:url value="/showOutliers.action"/>" target="centerIframe"><div style="width: 90%;height: 5%;background-color: aqua;margin-top: 10px;overflow: hidden">实时疏导情况</div></a>
             </div>

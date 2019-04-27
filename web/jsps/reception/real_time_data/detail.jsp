@@ -12,5 +12,26 @@
 </head>
 <body>
 details
+<div id="msg"></div>
+<script>
+    var wc =new WebSocket("ws://localHost:8080/socket.action");
+    wc.onopen = function(evt) {
+        document.getElementById('msg').innerText += "Connection open ..."
+        ws.send("Hello WebSockets!");
+    };
+
+    wc.onerror = function() {
+        alert(wc.url)
+    }
+
+    wc.onmessage = function(evt) {
+        document.getElementById('msg').innerText += "Received Message: " + evt.data + "\n"
+        ws.close();
+    };
+
+    wc.onclose = function(evt) {
+        document.getElementById('msg').innerText += "Connection closed."
+    };
+</script>
 </body>
 </html>
