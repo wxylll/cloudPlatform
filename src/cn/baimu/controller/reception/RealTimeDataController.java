@@ -22,8 +22,12 @@ public class RealTimeDataController {
     }
 
     @RequestMapping("/send")
-    public void send(String message) throws IOException {
-        websocketEndPoint.sendMessage(message);
+    public void send(String message) {
+        try {
+            websocketEndPoint.sendMessage(message);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }

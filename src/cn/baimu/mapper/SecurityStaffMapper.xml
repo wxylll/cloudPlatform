@@ -6,4 +6,8 @@
         select * from securitystaff where workPlace like '%${value}%'
     </select>
 
+    <insert id="add" parameterType="">
+        insert into securitystaff values(#{ssid},#{name},#{photo},#{contact},#{workStatus},#{workPlace})
+    </insert>
+
 </mapper>

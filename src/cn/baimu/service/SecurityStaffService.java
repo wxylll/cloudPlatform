@@ -1,13 +1,10 @@
-package cn.baimu.mapper;
+package cn.baimu.service;
 
 import cn.baimu.po.SecurityStaff;
 
 import java.util.List;
 
-/**
- * SecurityStaffMapper
- */
-public interface SecurityStaffMapper {
+public interface SecurityStaffService {
 
     /**
      * 通过任职地点查询安保人员

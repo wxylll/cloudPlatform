@@ -27,9 +27,7 @@ public class LoginController {
     @Autowired
     private EdgeTerminalService edgeTerminalService;
 
-    /**
-     *登录
-     */
+    //登录
     @RequestMapping("/login")
     public String login(String username, String password, Model model, HttpSession httpSession){
         User user = userService.login(username,password);

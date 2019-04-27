@@ -22,4 +22,6 @@
 
     <bean id="outlierService" class="cn.baimu.service.impl.OutlierServiceImpl"/>
 
+    <bean id="securityStaffService" class="cn.baimu.service.impl.SecurityStaffServiceImpl"/>
+
 </beans>

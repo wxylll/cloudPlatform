@@ -6,14 +6,12 @@ import cn.baimu.po.Outlier;
 import cn.baimu.po.PositionCategory;
 import cn.baimu.po.Scheme;
 import cn.baimu.service.OutlierService;
-import cn.baimu.websocket.handler.WebsocketEndPoint;
 import cn.itcast.commons.CommonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import javax.servlet.http.HttpServletResponse;
 import java.util.*;
 
 /**
@@ -25,6 +23,7 @@ public class DataAnalysisController {
     @Autowired
     private OutlierService outlierService;
 
+    //显示所有异常数据
     @RequestMapping("/showOutliers")
     public String showOutliers(Model model) {
         try {
@@ -41,6 +40,7 @@ public class DataAnalysisController {
         return "reception/data_analysis/test";
     }
 
+    //显示某个异常地点的详细数据
     @RequestMapping("/showDetails")
     public String showDetails(String position, Model model) {
         try {
