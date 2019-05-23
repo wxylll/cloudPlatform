@@ -19,15 +19,6 @@
     <context:component-scan base-package="cn.baimu.controller.reception"/>
     <context:component-scan base-package="cn.baimu.controller.backstage"/>
 
-    <bean id="wsHandler" class="cn.baimu.websocket.handler.WebsocketEndPoint"/>
-
-    <websocket:handlers allowed-origins="*">
-        <websocket:mapping path="/socket.action" handler="wsHandler"/>
-        <websocket:handshake-interceptors>
-            <bean class="cn.baimu.websocket.HandshakeInterceptor"/>
-        </websocket:handshake-interceptors>
-    </websocket:handlers>
-
     <!--处理器适配器-->
     <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
 
@@ -37,6 +28,13 @@
         <property name="suffix" value=".jsp"/>
         <!--前缀-->
         <property name="prefix" value="jsps/"/>
+    </bean>
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- 设置默认编码 -->
+        <property name="defaultEncoding" value="utf-8"></property>
+        <!-- 上传图片最大大小无限制-->
+        <property name="maxUploadSize" value="-1"></property>
     </bean>
 
 </beans>

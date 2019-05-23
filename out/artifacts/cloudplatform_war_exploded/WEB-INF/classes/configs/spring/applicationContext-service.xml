@@ -24,4 +24,6 @@
 
     <bean id="securityStaffService" class="cn.baimu.service.impl.SecurityStaffServiceImpl"/>
 
+    <bean id="positionCategoryService" class="cn.baimu.service.impl.PositionCategoryServiceImpl"/>
+
 </beans>

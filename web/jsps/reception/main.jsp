@@ -19,7 +19,7 @@
         #left {height: 100%;width: 0px;background-color: cadetblue;float: left;transition: all .5s;-webkit-transition: all .5s;box-shadow: 0px 0px 20px rgba(0,0,0,0.5)}
         #right {height: 1000px;width: 0px;background-color: cadetblue;float:right;transition: all .5s;-webkit-transition: all .5s;box-shadow: 0px 0px 20px rgba(0,0,0,0.5)}
         #center {position: absolute;left:17%;width: 66%;height: 98%;margin-top: -50%;background-color: white;transition: all .6s;-webkit-transition: all .6s;border-radius: 10px; box-shadow: 0px 0px 20px rgba(0,0,0,0.5);overflow: hidden}
-        #centerIframe {width: 101.8%;height: 95%;border: none;border-radius: 0px 0px 10px 10px;transition: all .6s;-webkit-transition: all .6s;overflow-x: hidden;overflow-y: scroll;}
+        #centerIframe {width: 101.8%;height: 95%;padding-right:0px;border: none;border-radius: 0px 0px 10px 10px;transition: all .6s;-webkit-transition: all .6s;overflow-x: hidden;overflow-y: scroll;}
         #icon:hover{cursor: pointer}
     </style>
 </head>
@@ -33,11 +33,12 @@
                 <a href="<c:url value="/showTerminal.action"/>" target="centerIframe"><div style="width: 90%;height: 5%;background-color: aqua;margin-top: 10px;overflow: hidden">边缘端管理</div></a>
                 <a href="<c:url value="/showOutliers.action"/>" target="centerIframe"><div style="width: 90%;height: 5%;background-color: aqua;margin-top: 10px;overflow: hidden">安保人员管理</div></a>
                 <a href="<c:url value="/showOutliers.action"/>" target="centerIframe"><div style="width: 90%;height: 5%;background-color: aqua;margin-top: 10px;overflow: hidden">实时疏导情况</div></a>
+                <div style="background-image: url('${pageContext.request.contextPath}/image/mark_b.png')"></div>
             </div>
             <div id="right"></div>
             <div id="center">
                 <div style="width: 100%;height: 5%;background-color: aquamarine;border-radius: 10px 10px 0px 0px;">
-                    <img id="icon" onclick="hidde()" style="float: right;margin-top: 2px;margin-right: 2px" width="3%" src="<c:url value="/image/箭头2.png"/> ">
+                    <img id="icon" onclick="hide()" style="float: right;margin-top: 2px;margin-right: 2px" width="3%" src="<c:url value="/image/箭头2.png"/> ">
                 </div>
                 <iframe id="centerIframe" name="centerIframe"></iframe>
             </div>
@@ -61,7 +62,7 @@
         element.firstElementChild.submit();
     }
 
-    function hidde() {
+    function hide() {
         document.getElementById('left').style.width = '0%';
         document.getElementById('right').style.width = '0%';
         document.getElementById('center').style.marginTop = '-50%';
@@ -97,17 +98,16 @@
                         zoom: 15 　　　　　　 // 设置地图的缩放级别，0 - 20
                     });
                     //标记监控点
-                    var arr = new Array("王府井","长安大厦","天安门广场");
-                    for(var pos in arr) {
-                        markLocation('${sessionScope.get('receptionUser').jurisdiction}' + ' ' + arr[pos]);
-                    }
+                    <c:forEach items="${jurisdictions}" var="jurisdiction">"${jurisdiction.monitoring}"
+                        markLocation('${sessionScope.get('receptionUser').jurisdiction}' + ' ' + '${jurisdiction.monitoring}','${jurisdiction.monitoring}','${jurisdiction.eid}');
+                    </c:forEach>
                 }
             });
         });
     }
 
     //标记地点
-    function markLocation(address) {
+    function markLocation(address,position,eid) {
         AMap.plugin('AMap.Geocoder', function() {
             var geocoder = new AMap.Geocoder();
             geocoder.getLocation(address, function(status, result) {
@@ -117,15 +117,14 @@
                     var lng = result.geocodes[0].location.lng;
                     var lat = result.geocodes[0].location.lat;
 
-                    var endIcon = "<div onmouseover='test1(this)' onmouseleave='test2(this)' style='width:20px;height:20px;background-color: red;' onclick='show(this)'>"
-                            + "<form method='post' target='centerIframe' action='${pageContext.request.contextPath}/showDetail.action'></form>"
+                    var endIcon = "<div id='" + eid + "' style='width:19px;height:31px;background-image:url(${pageContext.request.contextPath}/image/mark_b.png);' onclick='show(this)'>"
+                            + "<form method='post' target='centerIframe' action='${pageContext.request.contextPath}/showDetail.action?position=" + position + "'></form>"
                             + "</div>";
                     // 添加标记
                     var marker = new AMap.Marker({
                         content:endIcon,
                         map:map,
                         position: new AMap.LngLat(lng, lat),   // 经纬度
-                        offset: new AMap.Pixel(-10, -20)
                     });
                 } else {
                     console.log('定位失败！');

@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: 小星星
@@ -9,30 +10,71 @@
 <html>
 <head>
     <title>Title</title>
+    <script src="${pageContext.request.contextPath}/js/echarts.js"></script>
 </head>
 <body>
 <div id="msg"></div>
+<div id="imgDiv" style="width:100%;height:200px;background-color:red;" onclick="fun()"></div>
+<div id="imgD" style="width:100%;height:200px;background-color:green;" onclick="fun2()"></div>
+<img id="imgData" src="" >
+<input id="inp"/>
+<canvas id="mycanvas" width="500" height="500"></canvas>
 <script>
-    var local=window.location;
-    var contextPath=local.pathname.split("/")[1];
-    var wc =new WebSocket("ws://localHost:8080/socket.action");
+
+    var wc;
+
     wc.onopen = function(evt) {
+        if (typeof WebSocket == 'undefined') {
+            alert("不支持")
+        } else{
+            alert("支持")
+        }
         document.getElementById('msg').innerText += "Connection open ..."
-        ws.send("Hello WebSockets!");
+        wc.binaryType = "blob";
+
+        //wc.send("Hello WebSockets!123456");
     };
 
     wc.onerror = function() {
+        if (typeof WebSocket == 'undefined') {
+            alert("不支持")
+        } else{
+            alert("支持")
+        }
         alert(wc.url)
     }
 
     wc.onmessage = function(evt) {
-        document.getElementById('msg').innerText += "Received Message: " + evt.data
-        ws.close();
+        // alert(URL.createObjectURL(evt.data));
+        // var img = document.getElementById("imgData").src = URL.createObjectURL(evt.data);
+        //
+        // img.onload = function() {
+        //     window.URL.revokeObjectURL(this.src);
+        // }
+
+            var reader = new FileReader();
+        reader.readAsDataURL(evt.data);
+        reader.onload = function(evt){
+            if(evt.target.readyState == FileReader.DONE){
+                var url = evt.target.result;
+                var img = document.getElementById("imgData");
+                img.src = new URL("data:image/jpg" + url.toString().slice(5,url.toString().length))
+            }
+        }
     };
 
     wc.onclose = function(evt) {
         document.getElementById('msg').innerText += "Connection closed."
     };
+
+    function fun() {
+        wc =new WebSocket("ws://10.104.9.70:8080/realTimeData.action?isEdge=false&uid=" + document.getElementById('inp').value);
+    }
+
+    function fun2() {
+        wc.send(new ArrayBuffer("123"));
+    }
+
 </script>
 </body>
 </html>

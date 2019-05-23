@@ -18,6 +18,18 @@
                 http://www.springframework.org/schema/aop/spring-aop.xsd
                 http://www.springframework.org/schema/websocket http://www.springframework.org/schema/websocket/spring-websocket.xsd">
 
+    <bean id="wsHandler" class="cn.baimu.websocket.handler.WebsocketEndPoint"/>
+    <bean id="realTimeDataHandler" class="cn.baimu.websocket.handler.RealTimeDataHandler"/>
 
+    <websocket:handlers allowed-origins="*">
+        <websocket:mapping path="/socket.action" handler="wsHandler"/>
+    </websocket:handlers>
+
+    <websocket:handlers allowed-origins="*">
+        <websocket:mapping path="/realTimeData.action" handler="realTimeDataHandler"/>
+        <websocket:handshake-interceptors>
+            <bean class="cn.baimu.websocket.HandshakeInterceptor"/>
+        </websocket:handshake-interceptors>
+    </websocket:handlers>
 
 </beans>

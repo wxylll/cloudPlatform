@@ -17,7 +17,7 @@ body{
 }
 
 #username{
-    margin-top: 30%;
+    margin-top: 2%;
     margin-bottom:2%;
     width:260px;
     height:40px;
@@ -26,6 +26,7 @@ body{
     outline: none;
     border: 1px solid white;
     caret-color:white;
+    color:white;
 }
 
 #password{
@@ -37,6 +38,7 @@ body{
     outline: none;
     border: 1px solid white;
     caret-color:white;
+    color:white;
 }
 
 input::-webkit-input-placeholder{
@@ -55,8 +57,11 @@ input::-webkit-input-placeholder{
 }
 
 #logo{
-
     margin-bottom: -30%;
     width:60%;
     height:50%;
+}
+
+#loginForm {
+    margin-top: 25%;
 }

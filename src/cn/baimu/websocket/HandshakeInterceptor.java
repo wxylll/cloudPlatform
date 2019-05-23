@@ -2,10 +2,11 @@ package cn.baimu.websocket;
 
 import org.springframework.http.server.ServerHttpRequest;
 import org.springframework.http.server.ServerHttpResponse;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.http.server.ServletServerHttpRequest;
 import org.springframework.web.socket.WebSocketHandler;
 import org.springframework.web.socket.server.support.HttpSessionHandshakeInterceptor;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 public class HandshakeInterceptor extends HttpSessionHandshakeInterceptor {
@@ -14,7 +15,13 @@ public class HandshakeInterceptor extends HttpSessionHandshakeInterceptor {
     public boolean beforeHandshake(ServerHttpRequest request,
                                    ServerHttpResponse response, WebSocketHandler wsHandler,
                                    Map<String, Object> attributes) throws Exception {
-        System.out.println("Before Handshake");
+        HttpServletRequest req = ((ServletServerHttpRequest) request).getServletRequest();
+        System.out.println(req.getParameter("isEdge") + " " + req.getParameter("eid") + " " + req.getParameter("uid"));
+        attributes.put("isEdge",req.getParameter("isEdge"));
+        if (req.getParameter("eid") != null)
+            attributes.put("eid",req.getParameter("eid"));
+        if (req.getParameter("uid") != null)
+            attributes.put("uid",req.getParameter("uid"));
         return super.beforeHandshake(request, response, wsHandler, attributes);
     }
 
@@ -22,7 +29,6 @@ public class HandshakeInterceptor extends HttpSessionHandshakeInterceptor {
     public void afterHandshake(ServerHttpRequest request,
                                ServerHttpResponse response, WebSocketHandler wsHandler,
                                Exception ex) {
-        System.out.println("After Handshake");
         super.afterHandshake(request, response, wsHandler, ex);
     }
 

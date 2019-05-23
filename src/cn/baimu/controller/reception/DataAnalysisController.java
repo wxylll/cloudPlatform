@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.*;
 
@@ -42,7 +43,7 @@ public class DataAnalysisController {
 
     //显示某个异常地点的详细数据
     @RequestMapping("/showDetails")
-    public String showDetails(String position, Model model) {
+    public String showDetails(@RequestParam String position, Model model) {
         try {
             System.out.println(position);
             model.addAttribute("outliers",outlierService.combinationQuery(position,null,null));

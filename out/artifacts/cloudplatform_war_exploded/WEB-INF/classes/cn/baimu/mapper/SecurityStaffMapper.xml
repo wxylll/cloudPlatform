@@ -6,4 +6,8 @@
         select * from securitystaff where workPlace like '%${value}%'
     </select>
 
+    <insert id="add" parameterType="cn.baimu.po.SecurityStaff">
+        insert into securitystaff values(#{ssid},#{name},#{photo},#{contact},#{workStatus},#{workPlace})
+    </insert>
+
 </mapper>
