@@ -41,6 +41,7 @@ public class RealTimeDataHandler extends BinaryWebSocketHandler {
     @Override
     public void handleMessage(WebSocketSession session, WebSocketMessage<?> message) throws Exception {
         System.out.println(session.getAttributes().get("uid") + "****");
+        System.out.println(message);
         super.handleMessage(session, message);
     }
 

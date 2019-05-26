@@ -12,6 +12,9 @@
     <title>Title</title>
     <script src="${pageContext.request.contextPath}/js/echarts.js"></script>
     <style>
+        * {
+            font-family: 微软雅黑;
+        }
         .msgBox {
             height: 150px;
             width: 40%;
@@ -19,19 +22,19 @@
             margin-left: 6%;
         }
         .dataBox {
-            width:30%;
-            height:50%;
+            width:33%;
+            height:94%;
             background-color: white;
             float:right;
-            margin-right: 3%;
+            margin-right: 1%;
             box-shadow: 0px 0px 8px rgba(10,10,10,.2);
             border-radius: 3px;
-            padding:1%
+            padding:1%;
         }
         .videoBox {
             width: 59%;
-            height: 50%;
-            margin-left: 2%;
+            height: 94%;
+            margin-left: 1%;
             padding: 1%;
             background-color: white;
             box-shadow: 0px 0px 8px rgba(10,10,10,.2);
@@ -40,34 +43,39 @@
         }
     </style>
 </head>
-    <body style="background-color:rgb(245,245,245)">
+<body style="background-color:rgb(245,245,245)">
     <div>
-        <div style="width: 98%;margin-bottom: 10px;"><h1>${position}</h1></div>
-        <div class="videoBox">
-            <img id="imgData" style="width: 100%;height: 100%;" src="<c:url value="/jsps/reception/real_time_data/456.jpg"/>"/>
-        </div>
-        <div class="dataBox">
-            <div style="width: 100%;height: 5%;">实时人流</div>
-            <hr style="opacity: 0.5"/>
-            <div id="chart" style="width: 100%;height: 50%;margin-left: 1%;"></div>
-            <div align="center" style="width: 98%;padding: 1%">
-                <div class="msgBox">
-                    <h2>历史最高</h2>
-                    <h1>80</h1>
-                </div>
-                <div class="msgBox">
-                    <h2>当前人流</h2>
-                    <h1>80</h1>
+        <div style="width: 98%;margin-bottom: 10px;"><h3>${position}</h3></div>
+        <div style="height: 50%;">
+            <div class="videoBox">
+                <img id="imgData" style="width: 100%;height: 100%;" src="<c:url value="/jsps/reception/real_time_data/456.jpg"/>"/>
+            </div>
+            <div class="dataBox">
+                <div style="width: 100%;height: 5%;">实时人流</div>
+                <hr style="opacity: 0.5"/>
+                <div id="chart" style="width: 100%;height: 50%;margin-left: 1%;"></div>
+                <div align="center" style="width: 98%;padding: 1%">
+                    <div class="msgBox">
+                        <h3>历史最高</h3>
+                        <h3>80</h3>
+                    </div>
+                    <div class="msgBox">
+                        <h3>当前人流</h3>
+                        <h3>80</h3>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div style="width: 100%;height: 500px;padding-top: 10px">
+        <div style="border: 1px solid;width: 100%;height: 400px;">
+
         </div>
     </div>
 <script>
 
     var myChart = echarts.init(document.getElementById('chart'));
     myChart.showLoading();
-    var base = +new Date(2014, 9, 3);
-    var oneDay = 24 * 3600 * 1000;
     var date = ['2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00'];
     var data = [20,200,86,10,15,68,400,26,65,165,65,86,35,300,
     65];
@@ -76,13 +84,11 @@
     var wc =new WebSocket(url);
     var wc2 =new WebSocket("ws://localhost:8080/socket.action");
     wc.onopen = function(evt) {
-        document.getElementById('msg').innerText += "Connection open ..."
         wc.binaryType = 'blob';
         ws.send("Hello WebSockets!");
     };
 
     wc2.onopen = function(evt) {
-        document.getElementById('msg').innerText += "Connection open ..."
         wc2.binaryType = 'arraybuffer'
     }
 
@@ -135,7 +141,7 @@
         },
         grid: {
             left: 0,
-            right: 0,
+            right: 19,
             top: 0,
             bottom: 0
         },

@@ -68,7 +68,7 @@
     };
 
     function fun() {
-        wc =new WebSocket("ws://10.104.9.70:8080/realTimeData.action?isEdge=false&uid=" + document.getElementById('inp').value);
+        wc =new WebSocket("ws://localhost:8080/realTimeData.action?isEdge=false&uid=" + document.getElementById('inp').value);
     }
 
     function fun2() {
