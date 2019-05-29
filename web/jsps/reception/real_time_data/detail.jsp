@@ -170,8 +170,9 @@
             }
         ]
     };
-    myChart.setOption(option);
     myChart.hideLoading();
+    myChart.setOption(option);
+
 
 </script>
 </body>

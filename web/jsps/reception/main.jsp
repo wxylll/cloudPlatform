@@ -21,13 +21,16 @@
             -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently*/
         }
+        a {
+            text-decoration: none;
+            color:black;
+        }
         body, html,#container {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
         .show_div{width: 100%;height: 100%;position: absolute;z-index: 1000;visibility: hidden;}
         .show_div:hover{cursor: default}
         #left {height: 100%;width: 0px;background-color: cadetblue;float: left;transition: all .5s;-webkit-transition: all .5s;box-shadow: 0px 0px 20px rgba(0,0,0,0.5)}
         #center {position: absolute;left:17%;width: 66%;height: 98%;margin-top: -50%;background-color: white;transition: all .6s;-webkit-transition: all .6s;border-radius: 4px; box-shadow: 0px 0px 20px rgba(0,0,0,0.5);overflow: hidden}
         #centerIframe {width: 101.8%;height: 95%;padding-right:0px;border: none;border-radius: 0px 0px 4px 4px;transition: all .6s;-webkit-transition: all .6s;overflow-x: hidden;overflow-y: scroll;}
-        #icon:hover{cursor: pointer}
         .head {
             position: absolute;
             z-index: 1002;
@@ -125,6 +128,26 @@
             cursor: pointer;
             box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
         }
+        #msgBoxContainer::-webkit-scrollbar {
+            display: none;
+        }
+        #icon {
+            float: right;
+            margin-top: 1%;
+            margin-right: 1%;
+            width:22px;
+            height: 22px;
+            border-radius: 50%;
+            background-color: darkred;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+            transition: all .3s;
+            -webkit-transition: all .3s;
+        }
+        #icon:hover{
+            background-color: red;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+        }
     </style>
 </head>
 <body>
@@ -135,20 +158,20 @@
         </div>
         <div id="right">
             <div id="headBox">
-                <div id="userBox" style="float: right;margin-right: 0%;width: 65%;height: 89%;padding-top: 11%;display: none">
-                    <i style="float: left;margin-left: 6%">Erxiao_Wang</i>
+                <div id="userBox" style="float: right;margin-right: 0%;width: 65%;height: 89%;padding-top: 11%;display: none;">
+                    <i style="float: left;margin-left: 6%;font-size:16px;">Erxiao_Wang</i>
                     <div class="logout">
                         <img width="20" src="<c:url value="/image/logout.png"/>">
                     </div>
                 </div>
             </div>
-            <div id="msgBoxContainer" style="padding: 5px;overflow: scroll;height: 102%;width:105.5%;">
+            <div id="msgBoxContainer" style="padding: 5px;overflow: scroll;height: 100%;width:100%;font-size: 16px;">
                 <c:forEach items="${jurisdictions}" var="jurisdiction">
-                    <a onclick="show()" href="<c:url value="/showDetail.action?position=${jurisdiction.monitoring}"/>" target="centerIframe">
+                    <a onclick="show();" href="<c:url value="/showDetail.action?position=${jurisdiction.monitoring}"/>" target="centerIframe">
                         <div id="${jurisdiction.eid}" name="0" title="${jurisdiction.monitoring}" align="left" class="positionMsgBox">
                             <div  class="markBox"></div>
                             <div class="positionNameBox">${jurisdiction.monitoring}</div>
-                            <div class="dataBox">&nbsp;&nbsp;--</div>
+                            <div class="dataBox">1000</div>
                         </div>
                     </a>
                 </c:forEach>
@@ -164,7 +187,7 @@
             </div>
             <div id="center">
                 <div style="width: 100%;height: 5%;background-color: aquamarine;border-radius: 4px 4px 0px 0px;">
-                    <img id="icon" onclick="hide();" style="float: right;margin-top: 2px;margin-right: 2px" width="3%" src="<c:url value="/image/箭头2.png"/> ">
+                    <div id="icon" onclick="hide();"></div>
                 </div>
                 <iframe id="centerIframe" name="centerIframe"></iframe>
             </div>
@@ -176,6 +199,16 @@
 
     window.init = function() {
         createMap('container','${sessionScope.get('receptionUser').jurisdiction}');
+    }
+
+    window.onload = function() {
+        if (!!window.ActiveXObject || "ActiveXObject" in window) { //如果是IE，对URL中的中文进行转码
+            var links = document.getElementById('msgBoxContainer').getElementsByTagName('a');
+            for(var i=0;i<links.length;i++)
+            {
+                links[i].href = encodeURI(links[i].href);
+            }
+        }
     }
 
     setInterval("divSort();",5000); //每隔5秒根据人流对地点排序
@@ -213,7 +246,7 @@
 
     function hideHead() {
         var ele = document.getElementById('head');
-        ele.style.marginLeft = ele.offsetLeft - 140;
+        ele.style.marginLeft = '86%'
         ele.style.width = '50px';
         ele.style.height = '50px';
         ele.style.webkitTransform = 'rotate(360deg)';
@@ -225,7 +258,7 @@
 
     function showHead() {
         var ele = document.getElementById('head');
-        ele.style.marginLeft = ele.offsetLeft + 140;
+        ele.style.marginLeft = '95%';
         ele.style.width = '70px';
         ele.style.height = '70px';
         ele.style.webkitTransform = 'rotate(0deg)';
@@ -237,7 +270,6 @@
 
     function show() {
         if (!isShow) {
-            hideHead();
             document.getElementById('cen').style.visibility = 'visible';
             document.getElementById('left').style.width = '16%';
             document.getElementById('right').style.width = '16%';
@@ -262,8 +294,19 @@
                 eles2[i].style.height = '37px';
                 eles2[i].style.paddingTop = '13px';
             }
+            hideHead();
             isShow = true;
         }
+    }
+
+    function getOffsetLeft(obj){
+        var tmp = obj.offsetLeft;
+        var val = obj.offsetParent;
+        while(val != null){
+            tmp += val.offsetLeft;
+            val = val.offsetParent;
+        }
+        return tmp;
     }
 
     function markerSubmit(ele) {
@@ -295,7 +338,7 @@
             document.getElementById('headBox').style.height = '0%';
             document.getElementById('headBox').style.marginBottom = '0%';
             document.getElementById('headBox').style.boxShadow = 'none';
-            document.getElementById('msgBoxContainer').style.height = '102%';
+            document.getElementById('msgBoxContainer').style.height = '100%';
             document.getElementById('center').style.marginTop = '-50%';
             document.getElementById('cen').style.visibility = 'hidden';
             showHead();

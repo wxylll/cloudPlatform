@@ -42,13 +42,8 @@ public class RealTimeDataController {
     @RequestMapping("/send")
     public void send(@RequestParam String message) {
         try {
-            for (int i = 0; i < 1000; i++) {
-                websocketEndPoint.sendMessage((Math.random() * Integer.valueOf(message)) + "");
-                Thread.sleep(1000);
-            }
+            websocketEndPoint.sendMessage(message);
         } catch (IOException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
