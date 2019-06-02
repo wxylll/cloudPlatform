@@ -7,12 +7,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="961bb28e-f9c9-4e52-b286-43075c098044" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/web/icon/device.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/device_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/history.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/last.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/logout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/logout_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/monitoring.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/monitoring_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/monitoring_1_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/monitoring_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/now.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/shan_xing_tu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/staff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/staff_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/suo_fang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/suo_fang_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/table.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/table_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/zhe_xian_tu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/zhu_zhuang_tu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/head.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jsps/reception/login/img/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jsps/reception/login/img/foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jsps/reception/login/img/midground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jsps/reception/login/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/configs/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/configs/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/jsps/reception/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/jsps/reception/login/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/configs/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/configs/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/controller/reception/RealTimeDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/controller/reception/RealTimeDataController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/websocket/handler/WebsocketEndPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/websocket/handler/WebsocketEndPoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/configs/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/image/箭头1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/image/箭头2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsps/reception/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsps/reception/login/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsps/reception/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsps/reception/main.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsps/reception/real_time_data/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsps/reception/real_time_data/detail.jsp" afterDir="false" />
     </list>
@@ -29,73 +58,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RealTimeDataController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/baimu/controller/reception/RealTimeDataController.java">
+      <file leaf-file-name="main.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/jsps/reception/main.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+            <state relative-caret-position="294">
+              <caret line="321" column="4" selection-start-line="321" selection-start-column="4" selection-end-line="321" selection-end-column="35" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="detail.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/jsps/reception/real_time_data/detail.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="87" column="37" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webscoket.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/jsps/webscoket.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/jsps/reception/main.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="162" column="40" lean-forward="true" selection-start-line="162" selection-start-column="40" selection-end-line="162" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test2.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/jsps/reception/data_analysis/test2.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/jsps/backstage/main.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="RealTimeDataHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/baimu/websocket/handler/RealTimeDataHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractWebSocketHandler.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-websocket-5.0.0.RELEASE.jar!/org/springframework/web/socket/handler/AbstractWebSocketHandler.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+            <state relative-caret-position="243">
+              <caret line="136" column="83" selection-start-line="136" selection-start-column="83" selection-end-line="136" selection-end-column="83" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,12 +121,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/cn/baimu/service/OutlierService.java" />
         <option value="$PROJECT_DIR$/src/cn/baimu/service/impl/OutlierServiceImpl.java" />
         <option value="$PROJECT_DIR$/web/test2.jsp" />
         <option value="$PROJECT_DIR$/web/jsps/test.jsp" />
         <option value="$PROJECT_DIR$/web/jsps/test2.jsp" />
-        <option value="$PROJECT_DIR$/web/jsps/reception/login/login.css" />
         <option value="$PROJECT_DIR$/web/jsps/reception/real_time_data/guidance.jsp" />
         <option value="$PROJECT_DIR$/web/jsps/reception/data_analysis/test2.jsp" />
         <option value="$PROJECT_DIR$/src/cn/baimu/mapper/OutlierMapper.xml" />
@@ -165,17 +159,19 @@
         <option value="$PROJECT_DIR$/src/configs/spring/applicationContext-webscoket.xml" />
         <option value="$PROJECT_DIR$/src/cn/baimu/controller/reception/DataAnalysisController.java" />
         <option value="$PROJECT_DIR$/src/cn/baimu/controller/reception/LoginController.java" />
-        <option value="$PROJECT_DIR$/web/jsps/reception/login/login.jsp" />
-        <option value="$PROJECT_DIR$/web/css/login.css" />
         <option value="$PROJECT_DIR$/src/configs/spring/Springmvc.xml" />
         <option value="$PROJECT_DIR$/src/log4j.properties" />
         <option value="$PROJECT_DIR$/src/cn/baimu/websocket/handler/RealTimeDataHandler.java" />
         <option value="$PROJECT_DIR$/web/jsps/webscoket.jsp" />
-        <option value="$PROJECT_DIR$/src/configs/db.properties" />
-        <option value="$PROJECT_DIR$/web/jsps/reception/real_time_data/detail.jsp" />
         <option value="$PROJECT_DIR$/src/cn/baimu/controller/reception/RealTimeDataController.java" />
         <option value="$PROJECT_DIR$/src/cn/baimu/websocket/handler/WebsocketEndPoint.java" />
+        <option value="$PROJECT_DIR$/src/configs/db.properties" />
+        <option value="$PROJECT_DIR$/web/css/login.css" />
+        <option value="$PROJECT_DIR$/web/jsps/reception/login/login.jsp" />
+        <option value="$PROJECT_DIR$/web/jsps/reception/login/login.css" />
+        <option value="$PROJECT_DIR$/web/js/demo.js" />
         <option value="$PROJECT_DIR$/web/jsps/reception/main.jsp" />
+        <option value="$PROJECT_DIR$/web/jsps/reception/real_time_data/detail.jsp" />
       </list>
     </option>
   </component>
@@ -208,7 +204,7 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -323,12 +319,24 @@
               <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="icon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="image" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="jsps" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -337,22 +345,6 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="jsps" type="462c0819:PsiDirectoryNode" />
               <item name="reception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="jsps" type="462c0819:PsiDirectoryNode" />
-              <item name="reception" type="462c0819:PsiDirectoryNode" />
-              <item name="data_analysis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="jsps" type="462c0819:PsiDirectoryNode" />
-              <item name="reception" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
@@ -362,25 +354,11 @@
               <item name="reception" type="462c0819:PsiDirectoryNode" />
               <item name="real_time_data" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="jsps" type="462c0819:PsiDirectoryNode" />
-              <item name="reception" type="462c0819:PsiDirectoryNode" />
-              <item name="securitystaff" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -407,11 +385,11 @@
       <recent name="cn.hawkeye.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\git\cloudPlatform\web\jsps\reception" />
+      <recent name="E:\idea_workspace\cloudPlatform\web\icon" />
       <recent name="E:\idea_workspace\cloudPlatform\web\image" />
-      <recent name="E:\idea_workspace\cloudPlatform\web\jsps\reception\real_time_data" />
-      <recent name="E:\git\cloudPlatform\web\jsps\reception\real_time_data" />
-      <recent name="E:\git\cloudPlatform\web\image" />
+      <recent name="E:\idea_workspace\cloudPlatform\web\css" />
+      <recent name="E:\idea_workspace\cloudPlatform\web\js" />
+      <recent name="E:\idea_workspace\cloudPlatform\web\jsps\reception\login" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -627,6 +605,10 @@
       <workItem from="1559031815016" duration="12772000" />
       <workItem from="1559115205785" duration="2045000" />
       <workItem from="1559125518446" duration="3104000" />
+      <workItem from="1559202786564" duration="10109000" />
+      <workItem from="1559269694265" duration="19206000" />
+      <workItem from="1559373069046" duration="19487000" />
+      <workItem from="1559435126999" duration="9886000" />
     </task>
     <task id="LOCAL-00001" summary="一点更改">
       <created>1554283766730</created>
@@ -695,7 +677,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="419698000" />
+    <option name="totallyTimeSpent" value="478386000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -711,7 +693,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" weight="0.329429" />
-      <window_info anchor="bottom" id="Application Servers" order="12" weight="0.3235725" />
+      <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32107496" />
       <window_info anchor="right" id="Maven Projects" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
@@ -728,21 +710,21 @@
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32796487" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32064423" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31966054" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49565217" visible="true" weight="0.2580429" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49064448" visible="true" weight="0.26407507" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info anchor="right" id="SciView" order="10" />
       <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info id="Favorites" order="5" sideWeight="0.5042017" side_tool="true" weight="0.288874" />
+      <window_info id="Favorites" order="5" sideWeight="0.5093555" side_tool="true" weight="0.26407507" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="SciView" order="10" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -797,136 +779,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-websocket-5.0.0.RELEASE.jar!/org/springframework/web/socket/BinaryMessage.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-websocket-5.0.0.RELEASE.jar!/org/springframework/web/socket/handler/ConcurrentWebSocketSessionDecorator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-577">
-          <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-websocket-5.0.0.RELEASE.jar!/org/springframework/web/socket/handler/WebSocketSessionDecorator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-websocket-5.0.0.RELEASE.jar!/org/springframework/web/socket/WebSocketSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-websocket-5.0.0.RELEASE.jar!/org/springframework/web/socket/server/support/HttpSessionHandshakeInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="19" column="76" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/baimu/service/SecurityStaffService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/baimu/websocket/HandshakeInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="18" column="76" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/baimu/po/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-core-5.0.0.RELEASE.jar!/org/springframework/util/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-websocket-5.0.0.RELEASE.jar!/org/springframework/web/socket/adapter/standard/StandardWebSocketSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-websocket-5.0.0.RELEASE.jar!/org/springframework/web/socket/handler/LoggingWebSocketHandlerDecorator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-websocket-5.0.0.RELEASE.jar!/org/springframework/web/socket/adapter/standard/StandardWebSocketHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-websocket-5.0.0.RELEASE.jar!/org/springframework/web/socket/handler/ExceptionWebSocketHandlerDecorator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-websocket-5.0.0.RELEASE.jar!/org/springframework/web/socket/handler/WebSocketHandlerDecorator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/develop/Java/jdk1.8.0_181/src.zip!/java/lang/AbstractStringBuilder.java" />
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-websocket-5.0.0.RELEASE.jar!/org/springframework/web/socket/adapter/AbstractWebSocketSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/develop/Java/jdk1.8.0_181/src.zip!/java/util/AbstractCollection.java" />
-    <entry file="jar://D:/develop/Java/jdk1.8.0_181/src.zip!/java/lang/StringBuilder.java" />
-    <entry file="jar://D:/develop/Java/jdk1.8.0_181/src.zip!/java/lang/String.java" />
-    <entry file="file://$PROJECT_DIR$/src/cn/baimu/controller/reception/EdgeTerminalController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/baimu/controller/reception/SecurityStaffController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/baimu/controller/backstage/PositionCategoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/baimu/controller/backstage/BackStageLoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1005,7 +857,7 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-websocket-5.0.0.RELEASE.jar!/org/springframework/web/socket/handler/AbstractWebSocketHandler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
+        <state relative-caret-position="361">
           <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
         </state>
       </provider>
@@ -1018,12 +870,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/image/mark_r.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/image/箭头1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/image/箭头2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/image/mark_b.png">
@@ -1039,13 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/configs/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/baimu/websocket/handler/WebsocketEndPoint.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -1055,7 +894,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/baimu/controller/reception/RealTimeDataController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
+        <state relative-caret-position="456">
           <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1063,27 +902,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/login.css">
+    <entry file="file://$PROJECT_DIR$/src/configs/db.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/reception/login/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/image/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/reception/real_time_data/detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="87" column="37" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="37" />
+        <state relative-caret-position="57">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1094,10 +916,120 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/reception/login/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icon/device.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icon/monitoring.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icon/monitoring_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icon/shan_xing_tu.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icon/zhu_zhuang_tu.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icon/zhe_xian_tu.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icon/table_hover.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icon/staff_hover.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icon/staff.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icon/monitoring_hover.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icon/monitoring_1_hover.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icon/suo_fang.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icon/suo_fang_hover.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/icon/jiaoben2826/js/jquery-1.11.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4845" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery.particleground.min.js" />
+    <entry file="file://$PROJECT_DIR$/web/js/jquery.particleground.js" />
+    <entry file="file://$PROJECT_DIR$/web/js/demo.js" />
+    <entry file="file://$PROJECT_DIR$/web/js/background.js" />
+    <entry file="file://$PROJECT_DIR$/web/js/background.min.js" />
+    <entry file="file://$PROJECT_DIR$/web/image/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/font-awesome.min.css" />
+    <entry file="file://$USER_HOME$/Desktop/icon/jiaoben2826/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/icon/jiaoben2826/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/image/箭头1.png" />
+    <entry file="file://$PROJECT_DIR$/web/image/箭头2.png" />
+    <entry file="file://$PROJECT_DIR$/web/jsps/reception/login/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-118">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/jsps/reception/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="162" column="40" lean-forward="true" selection-start-line="162" selection-start-column="40" selection-end-line="162" selection-end-column="40" />
+        <state relative-caret-position="294">
+          <caret line="321" column="4" selection-start-line="321" selection-start-column="4" selection-end-line="321" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/reception/real_time_data/detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="136" column="83" selection-start-line="136" selection-start-column="83" selection-end-line="136" selection-end-column="83" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
