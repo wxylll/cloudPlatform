@@ -7,43 +7,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="961bb28e-f9c9-4e52-b286-43075c098044" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/icon/device.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/device_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/history.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/last.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/logout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/logout_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/monitoring.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/monitoring_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/monitoring_1_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/monitoring_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/now.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/shan_xing_tu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/staff.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/staff_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/suo_fang.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/suo_fang_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/table.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/table_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/zhe_xian_tu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/zhu_zhuang_tu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/image/head.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/image/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/reception/login/img/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/reception/login/img/foreground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/reception/login/img/midground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/reception/login/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/baimu/websocket/handler/RealTimeVideoDataHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/chart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/icon/guidance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery-3.3.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/layer/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/layer/mobile/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/layer/mobile/need/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/layer/theme/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/layer/theme/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/layer/theme/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/layer/theme/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/layer/theme/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/layer/theme/default/loading-2.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/EdgeTerminalMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/EdgeTerminalMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/EdgeTerminalMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/EdgeTerminalMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/po/EdgeTerminal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/po/EdgeTerminal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/service/impl/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/configs/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/configs/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/jsps/reception/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/jsps/reception/login/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/EdgeTerminalMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/EdgeTerminalMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/EdgeTerminalMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/EdgeTerminalMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/po/EdgeTerminal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/po/EdgeTerminal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/service/impl/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/configs/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/configs/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/baimu/controller/reception/EdgeTerminalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/controller/reception/EdgeTerminalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/baimu/controller/reception/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/controller/reception/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/baimu/controller/reception/RealTimeDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/controller/reception/RealTimeDataController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/baimu/mapper/EdgeTerminalMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/mapper/EdgeTerminalMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/baimu/mapper/EdgeTerminalMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/mapper/EdgeTerminalMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/baimu/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/baimu/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/baimu/po/EdgeTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/po/EdgeTerminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/baimu/service/EdgeTerminalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/service/EdgeTerminalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/baimu/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/baimu/service/impl/EdgeTerminalServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/service/impl/EdgeTerminalServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/baimu/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/baimu/websocket/handler/RealTimeDataHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/websocket/handler/RealTimeDataHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/baimu/websocket/handler/WebsocketEndPoint.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/configs/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/image/箭头1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/image/箭头2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsps/reception/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsps/reception/login/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/configs/spring/applicationContext-webscoket.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/spring/applicationContext-webscoket.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsps/reception/edgeterminal/edgeterminal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsps/reception/edgeterminal/edgeterminal.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsps/reception/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsps/reception/main.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsps/reception/real_time_data/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsps/reception/real_time_data/detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsps/webscoket.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsps/webscoket.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,40 +71,110 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/jsps/reception/main.jsp">
+      <file leaf-file-name="EdgeTerminalController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/baimu/controller/reception/EdgeTerminalController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="321" column="4" selection-start-line="321" selection-start-column="4" selection-end-line="321" selection-end-column="35" />
+            <state relative-caret-position="190">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RealTimeDataHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/baimu/websocket/handler/RealTimeDataHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RealTimeVideoDataHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/baimu/websocket/handler/RealTimeVideoDataHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="91" column="23" lean-forward="true" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#3112#3113#0" expanded="true" />
+                <element signature="e#3139#3140#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HandshakeInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/baimu/websocket/HandshakeInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RealTimeDataController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/baimu/controller/reception/RealTimeDataController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="627">
+              <caret line="42" column="62" selection-start-line="42" selection-start-column="62" selection-end-line="42" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/jsps/reception/real_time_data/detail.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="136" column="83" selection-start-line="136" selection-start-column="83" selection-end-line="136" selection-end-column="83" />
+            <state relative-caret-position="4408">
+              <caret line="238" column="99" selection-start-line="238" selection-start-column="99" selection-end-line="238" selection-end-column="99" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edgeterminal.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/jsps/reception/edgeterminal/edgeterminal.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="412">
+              <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
               <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EdgeTerminal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/baimu/po/EdgeTerminal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#408#409#0" expanded="true" />
+                <element signature="e#440#441#0" expanded="true" />
+                <element signature="e#487#488#0" expanded="true" />
+                <element signature="e#529#530#0" expanded="true" />
+                <element signature="e#450#451#0" expanded="true" />
+                <element signature="e#483#484#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EdgeTerminalMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/baimu/mapper/EdgeTerminalMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EdgeTerminalMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/baimu/mapper/EdgeTerminalMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="27" column="74" lean-forward="true" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -121,30 +204,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/cn/baimu/service/impl/OutlierServiceImpl.java" />
-        <option value="$PROJECT_DIR$/web/test2.jsp" />
-        <option value="$PROJECT_DIR$/web/jsps/test.jsp" />
-        <option value="$PROJECT_DIR$/web/jsps/test2.jsp" />
-        <option value="$PROJECT_DIR$/web/jsps/reception/real_time_data/guidance.jsp" />
         <option value="$PROJECT_DIR$/web/jsps/reception/data_analysis/test2.jsp" />
         <option value="$PROJECT_DIR$/src/cn/baimu/mapper/OutlierMapper.xml" />
         <option value="$PROJECT_DIR$/src/cn/baimu/websocket/WebSocketConfig.java" />
         <option value="$PROJECT_DIR$/src/cn/baimu/websocket/WebSocketTest.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/jsps/reception/data_analysis/test.jsp" />
-        <option value="$PROJECT_DIR$/src/cn/baimu/mapper/EdgeTerminalMapper.java" />
-        <option value="$PROJECT_DIR$/src/cn/baimu/po/EdgeTerminal.java" />
-        <option value="$PROJECT_DIR$/src/cn/baimu/mapper/EdgeTerminalMapper.xml" />
-        <option value="$PROJECT_DIR$/src/cn/baimu/service/EdgeTerminalService.java" />
-        <option value="$PROJECT_DIR$/src/cn/baimu/service/impl/EdgeTerminalServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/cn/baimu/po/User.java" />
-        <option value="$PROJECT_DIR$/web/jsps/reception/edgeterminal/edgeterminal.jsp" />
         <option value="$PROJECT_DIR$/src/cn/baimu/service/SecurityStaffService.java" />
         <option value="$PROJECT_DIR$/src/cn/baimu/mapper/SecurityStaffMapper.java" />
         <option value="$PROJECT_DIR$/src/cn/baimu/service/impl/SecurityStaffServiceImpl.java" />
         <option value="$PROJECT_DIR$/web/jsps/backstage/main.jsp" />
         <option value="$PROJECT_DIR$/src/cn/baimu/controller/backstage/ReceptionController.java" />
-        <option value="$PROJECT_DIR$/src/cn/baimu/controller/reception/EdgeTerminalController.java" />
         <option value="$PROJECT_DIR$/src/cn/baimu/controller/backstage/ReceptionUserController.java" />
         <option value="$PROJECT_DIR$/src/cn/baimu/controller/backstage/BackStageLoginController.java" />
         <option value="$PROJECT_DIR$/web/jsps/reception/securitystaff/show.jsp" />
@@ -156,22 +227,34 @@
         <option value="$PROJECT_DIR$/src/cn/baimu/mapper/SecurityStaffMapper.xml" />
         <option value="$PROJECT_DIR$/src/cn/baimu/websocket/handler/RealTimeDataSocket.java" />
         <option value="$PROJECT_DIR$/src/cn/baimu/websocket/HandshakeInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/configs/spring/applicationContext-webscoket.xml" />
         <option value="$PROJECT_DIR$/src/cn/baimu/controller/reception/DataAnalysisController.java" />
-        <option value="$PROJECT_DIR$/src/cn/baimu/controller/reception/LoginController.java" />
         <option value="$PROJECT_DIR$/src/configs/spring/Springmvc.xml" />
-        <option value="$PROJECT_DIR$/src/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/cn/baimu/websocket/handler/RealTimeDataHandler.java" />
-        <option value="$PROJECT_DIR$/web/jsps/webscoket.jsp" />
-        <option value="$PROJECT_DIR$/src/cn/baimu/controller/reception/RealTimeDataController.java" />
-        <option value="$PROJECT_DIR$/src/cn/baimu/websocket/handler/WebsocketEndPoint.java" />
-        <option value="$PROJECT_DIR$/src/configs/db.properties" />
         <option value="$PROJECT_DIR$/web/css/login.css" />
         <option value="$PROJECT_DIR$/web/jsps/reception/login/login.jsp" />
         <option value="$PROJECT_DIR$/web/jsps/reception/login/login.css" />
         <option value="$PROJECT_DIR$/web/js/demo.js" />
+        <option value="$PROJECT_DIR$/src/configs/db.properties" />
         <option value="$PROJECT_DIR$/web/jsps/reception/main.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/baimu/websocket/handler/WebsocketEndPoint.java" />
+        <option value="$PROJECT_DIR$/src/configs/spring/applicationContext-webscoket.xml" />
+        <option value="$PROJECT_DIR$/src/cn/baimu/websocket/handler/RealTimeDataHandler.java" />
+        <option value="$PROJECT_DIR$/src/cn/baimu/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/cn/baimu/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/cn/baimu/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/cn/baimu/mapper/EdgeTerminalMapper.java" />
+        <option value="$PROJECT_DIR$/src/cn/baimu/service/EdgeTerminalService.java" />
+        <option value="$PROJECT_DIR$/src/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/cn/baimu/service/impl/EdgeTerminalServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/baimu/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/baimu/controller/reception/LoginController.java" />
+        <option value="$PROJECT_DIR$/web/jsps/webscoket.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/baimu/controller/reception/EdgeTerminalController.java" />
         <option value="$PROJECT_DIR$/web/jsps/reception/real_time_data/detail.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/baimu/controller/reception/RealTimeDataController.java" />
+        <option value="$PROJECT_DIR$/src/cn/baimu/websocket/handler/RealTimeVideoDataHandler.java" />
+        <option value="$PROJECT_DIR$/src/cn/baimu/po/EdgeTerminal.java" />
+        <option value="$PROJECT_DIR$/src/cn/baimu/mapper/EdgeTerminalMapper.xml" />
+        <option value="$PROJECT_DIR$/web/jsps/reception/edgeterminal/edgeterminal.jsp" />
       </list>
     </option>
   </component>
@@ -319,18 +402,6 @@
               <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="icon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="image" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -345,6 +416,22 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="jsps" type="462c0819:PsiDirectoryNode" />
               <item name="reception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="jsps" type="462c0819:PsiDirectoryNode" />
+              <item name="reception" type="462c0819:PsiDirectoryNode" />
+              <item name="data_analysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="jsps" type="462c0819:PsiDirectoryNode" />
+              <item name="reception" type="462c0819:PsiDirectoryNode" />
+              <item name="edgeterminal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
@@ -374,22 +461,22 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="cn.hawkeye.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\git\cloudPlatform\web\js" />
+      <recent name="E:\git\cloudPlatform\web\icon" />
+      <recent name="E:\git\cloudPlatform\web" />
+      <recent name="E:\idea_workspace\cloudPlatform\web\icon" />
+      <recent name="E:\idea_workspace\cloudPlatform\web\image" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\idea_workspace\cloudPlatform\web\jsps\reception\login" />
       <recent name="E:\idea_workspace\cloudPlatform\web" />
       <recent name="E:\idea_workspace\cloudPlatform\web\jsps\reception\css" />
       <recent name="E:\idea_workspace\cloudPlatform\web\jsps\reception\image" />
       <recent name="E:\idea_workspace\cloudPlatform\web\jsps\reception\data_analysis" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="cn.hawkeye.service" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\idea_workspace\cloudPlatform\web\icon" />
-      <recent name="E:\idea_workspace\cloudPlatform\web\image" />
-      <recent name="E:\idea_workspace\cloudPlatform\web\css" />
-      <recent name="E:\idea_workspace\cloudPlatform\web\js" />
-      <recent name="E:\idea_workspace\cloudPlatform\web\jsps\reception\login" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -609,6 +696,13 @@
       <workItem from="1559269694265" duration="19206000" />
       <workItem from="1559373069046" duration="19487000" />
       <workItem from="1559435126999" duration="9886000" />
+      <workItem from="1559446969829" duration="19654000" />
+      <workItem from="1559477095503" duration="13876000" />
+      <workItem from="1559528237777" duration="13062000" />
+      <workItem from="1559549823354" duration="5376000" />
+      <workItem from="1559559882206" duration="10608000" />
+      <workItem from="1559574250494" duration="2722000" />
+      <workItem from="1559623906456" duration="5862000" />
     </task>
     <task id="LOCAL-00001" summary="一点更改">
       <created>1554283766730</created>
@@ -677,7 +771,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="478386000" />
+    <option name="totallyTimeSpent" value="549546000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -693,7 +787,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" weight="0.329429" />
-      <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32107496" />
+      <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32064423" />
       <window_info anchor="right" id="Maven Projects" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
@@ -710,21 +804,21 @@
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32796487" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31966054" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3191801" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49064448" visible="true" weight="0.26407507" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49353448" visible="true" weight="0.28619304" />
       <window_info anchor="right" id="Bean Validation" order="8" />
-      <window_info id="Web" order="6" side_tool="true" />
+      <window_info id="Web" order="6" sideWeight="0.5064655" side_tool="true" weight="0.26742628" />
+      <window_info anchor="right" id="SciView" order="10" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" sideWeight="0.5093555" side_tool="true" weight="0.26407507" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="SciView" order="10" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -775,163 +869,10 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cn/baimu/controller/backstage/BackStageLoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/baimu/controller/reception/DataAnalysisController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-websocket-5.0.0.RELEASE.jar!/org/springframework/web/socket/WebSocketHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/baimu/controller/backstage/ReceptionUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/configs/spring/applicationContext-webscoket.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="24" column="40" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/configs/spring/Springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/baimu/controller/reception/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="42" column="59" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/baimu/po/EdgeTerminal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/reception/data_analysis/test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="60" selection-start-line="60" selection-end-line="63" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/reception/real_time_data/guidance.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-websocket-5.0.0.RELEASE.jar!/org/springframework/web/socket/handler/AbstractWebSocketHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/baimu/websocket/handler/RealTimeDataHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/image/mark_r.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/image/mark_b.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/backstage/main.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/reception/data_analysis/test2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/baimu/websocket/handler/WebsocketEndPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/baimu/controller/reception/RealTimeDataController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/configs/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/webscoket.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/reception/login/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/icon/device.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/icon/monitoring.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/icon/monitoring_1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/icon/shan_xing_tu.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -962,11 +903,7 @@
     <entry file="file://$PROJECT_DIR$/web/icon/suo_fang_hover.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/icon/jiaoben2826/js/jquery-1.11.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4845" />
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/icon/jiaoben2826/js/jquery-1.11.1.min.js" />
     <entry file="file://$PROJECT_DIR$/web/js/jquery.particleground.min.js" />
     <entry file="file://$PROJECT_DIR$/web/js/jquery.particleground.js" />
     <entry file="file://$PROJECT_DIR$/web/js/demo.js" />
@@ -976,20 +913,8 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/font-awesome.min.css" />
-    <entry file="file://$USER_HOME$/Desktop/icon/jiaoben2826/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/icon/jiaoben2826/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/icon/jiaoben2826/css/style.css" />
+    <entry file="file://$USER_HOME$/Desktop/icon/jiaoben2826/index.html" />
     <entry file="file://$PROJECT_DIR$/web/image/箭头1.png" />
     <entry file="file://$PROJECT_DIR$/web/image/箭头2.png" />
     <entry file="file://$PROJECT_DIR$/web/jsps/reception/login/login.jsp">
@@ -999,36 +924,196 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/configs/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/icon/table.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/js/flot.js" />
+    <entry file="file://$PROJECT_DIR$/web/assets/plugins/bootstrap/css/bootstrap.min.css" />
+    <entry file="file://E:/模版/模版/Kharna Admin响应式后台管理模板-----/table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="24" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/baimu/mapper/OutlierMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/configs/spring/applicationContext-webscoket.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/baimu/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/baimu/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/baimu/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/baimu/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1406">
+          <caret line="80" column="20" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/baimu/service/EdgeTerminalService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/baimu/service/impl/EdgeTerminalServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/baimu/controller/reception/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="38" column="99" selection-start-line="38" selection-start-column="99" selection-end-line="38" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery-3.3.1.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/webscoket.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/jsps/reception/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="321" column="4" selection-start-line="321" selection-start-column="4" selection-end-line="321" selection-end-column="35" />
+        <state relative-caret-position="6840">
+          <caret line="360" column="5" selection-start-line="360" selection-start-column="5" selection-end-line="360" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/baimu/websocket/HandshakeInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/baimu/controller/reception/RealTimeDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="42" column="62" selection-start-line="42" selection-start-column="62" selection-end-line="42" selection-end-column="62" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/baimu/websocket/handler/RealTimeVideoDataHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="91" column="23" lean-forward="true" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
+          <folding>
+            <element signature="e#3112#3113#0" expanded="true" />
+            <element signature="e#3139#3140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/baimu/websocket/handler/RealTimeDataHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/baimu/controller/reception/EdgeTerminalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/baimu/mapper/EdgeTerminalMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="27" column="74" lean-forward="true" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/baimu/mapper/EdgeTerminalMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/baimu/po/EdgeTerminal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/jsps/reception/real_time_data/detail.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="136" column="83" selection-start-line="136" selection-start-column="83" selection-end-line="136" selection-end-column="83" />
+        <state relative-caret-position="4408">
+          <caret line="238" column="99" selection-start-line="238" selection-start-column="99" selection-end-line="238" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/reception/edgeterminal/edgeterminal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
           <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

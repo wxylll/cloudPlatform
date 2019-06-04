@@ -36,7 +36,7 @@ public class LoginController {
             httpSession.setAttribute("receptionUser",user); //保存用户信息
             List<EdgeTerminal> edgeTerminals = null;
             try {
-                edgeTerminals = edgeTerminalService.getEdgeTerminals(user.getUid()); //获取用户管辖范围类的边缘端信息
+                edgeTerminals = edgeTerminalService.getEdgeTerminals(user.getUid()); //获取用户管辖范围类已接管的边缘端信息
             } catch (Exception e) {
                 e.printStackTrace();
             }

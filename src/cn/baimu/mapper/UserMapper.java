@@ -35,4 +35,12 @@ public interface UserMapper {
      */
     public User findByUsername(String username) throws Exception;
 
+    /**
+     * 根据地点获取用户
+     * @param position
+     * @return
+     * @throws Exception
+     */
+    public List<User> findUserByPosition(String position) throws Exception;
+
 }

@@ -1,26 +1,15 @@
 package cn.baimu.controller.reception;
 
 import cn.baimu.websocket.handler.RealTimeDataHandler;
-import cn.baimu.websocket.handler.WebsocketEndPoint;
-import org.bytedeco.javacpp.opencv_core;
-import org.bytedeco.javacv.*;
-import org.bytedeco.javacv.Frame;
+import cn.baimu.websocket.handler.RealTimeVideoDataHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.imageio.ImageIO;
-import javax.swing.*;
-import java.awt.image.BufferedImage;
-import java.awt.image.DataBufferByte;
-import java.awt.image.WritableRaster;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.nio.ByteBuffer;
 
 /**
  * 实时数据处理
@@ -29,9 +18,9 @@ import java.nio.ByteBuffer;
 public class RealTimeDataController {
 
     @Autowired
-    private RealTimeDataHandler realTimeDataHandler;
+    private RealTimeVideoDataHandler realTimeVideoDataHandler;
     @Autowired
-    private WebsocketEndPoint websocketEndPoint;
+    private RealTimeDataHandler realTimeDataHandler;
 
     @RequestMapping("/showDetail")
     public String showDetail(@RequestParam String position, Model model) {
@@ -42,7 +31,7 @@ public class RealTimeDataController {
     @RequestMapping("/send")
     public void send(@RequestParam String message) {
         try {
-            websocketEndPoint.sendMessage(message);
+            realTimeDataHandler.sendMessage(message,"");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -50,10 +39,8 @@ public class RealTimeDataController {
 
     @RequestMapping("/send2")
     public void send2(@RequestParam MultipartFile img, @RequestParam String test) {
-        System.out.println(img);
-        System.out.println(test);
         try {
-            realTimeDataHandler.sendVideo(img.getBytes(),"123");
+            realTimeVideoDataHandler.sendToUser(img.getBytes(),"123");
         } catch (Exception e) {
             e.printStackTrace();
         }

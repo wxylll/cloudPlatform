@@ -11,8 +11,10 @@
 <head>
     <title>Title</title>
     <script src="${pageContext.request.contextPath}/js/echarts.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-3.3.1.js"></script>
 </head>
 <body>
+<a onclick="conn()" style="width:50%;height: 50%;background-color: red;display: block">点我</a>
 <div id="msg"></div>
 <div id="imgDiv" style="width:100%;height:200px;background-color:red;" onclick="fun()"></div>
 <div id="imgD" style="width:100%;height:200px;background-color:green;" onclick="fun2()"></div>
@@ -20,6 +22,20 @@
 <input id="inp"/>
 <canvas id="mycanvas" width="500" height="500"></canvas>
 <script>
+
+    function conn(){
+        $.ajax({
+            url:'${pageContext.request.contextPath}/updateEdgeTerminal.action',
+            type:'get',
+            success:function(data){
+                alert(data)
+            }
+        })
+    }
+
+    function gui() {
+        alert('服务器调用了我！！！')
+    }
 
     var wc;
 

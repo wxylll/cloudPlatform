@@ -29,7 +29,7 @@
         body, html,#container {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
         .show_div{width: 100%;height: 100%;position: absolute;z-index: 1000;visibility: hidden;}
         .show_div:hover{cursor: default}
-        #left {height: 100%;width: 16%;margin-left: -16%;background-color: #222d32;float: left;transition: all .5s;-webkit-transition: all .5s;box-shadow: 0px 0px 20px rgba(0,0,0,0.5);overflow: hidden}
+        #left {height: 100%;width: 16%;margin-left: -16%;background-color: #222d32;float: left;transition: all .5s;-webkit-transition: all .5s;overflow: hidden}
         #left ul{
             list-style: none;
             width: 100%;
@@ -92,8 +92,8 @@
             margin-right: 30px;
             font-family: 黑体;
         }
-        #center {position: absolute;left:17%;width: 66%;height: 98%;margin-top: -50%;background-color: #333;transition: all .6s;-webkit-transition: all .6s;border-radius: 4px; box-shadow: 0px 0px 20px rgba(0,0,0,0.5);overflow: hidden}
-        #centerIframe {width: 101.8%;height: 95%;padding-right:0px;border: none;border-radius: 0px 0px 4px 4px;transition: all .6s;-webkit-transition: all .6s;overflow-x: hidden;overflow-y: scroll;}
+        #center {position: absolute;left:16%;width: 68%;height: 100%;margin-top: -50%;background-color: rgb(240,240,240);transition: all .6s;-webkit-transition: all .6s;overflow: hidden}
+        #centerIframe {width: 101.8%;height: 95%;padding-right:0px;box-shadow: 0px 0px 10px rgba(0,0,0,.5) inset;border: none;border-radius: 0px 0px 4px 4px;transition: all .6s;-webkit-transition: all .6s;overflow: hidden;overflow-y: scroll;}
         .head {
             position: absolute;
             z-index: 1002;
@@ -113,11 +113,11 @@
             height: 50%;
             width: 5%;
             border-radius: 5px 0px 0px 5px;
-            background-color: rgba(255,255,255,1);
+            background-color: white;
             float:right;
+            box-shadow: 0px 0px 20px rgba(0,0,0,.5);
             transition: all .5s;
             -webkit-transition: all .5s;
-            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
             overflow: hidden;
         }
         #right:hover {
@@ -134,7 +134,7 @@
         }
         .positionMsgBox:hover {
             cursor: pointer;
-            background-color: rgba(0,0,0,.1);
+            background-color: rgba(255,255,255,.1);
         }
         #headBox {
             width: 0px;
@@ -151,6 +151,7 @@
             width: 0px;
             height: 0px;
             overflow: hidden;
+            color: white;
             float: left;
             transition: all .5s;
             -webkit-transition: all .5s;
@@ -252,7 +253,7 @@
         </div>
         <div id="cen" class="show_div">
             <div id="left">
-                <div style="width: 100%;height: 8%;background-color: #3c8dbc">
+                <div style="width: 100%;height: 8%;background-color: #3c8dbc;box-shadow: 0px 0px 40px rgba(0,0,0,.1) inset">
                     <img height="100%" width="45%" src="${pageContext.request.contextPath}/image/logo.png">
                 </div>
                 <div class="left_user">
@@ -294,7 +295,7 @@
                 </ul>
             </div>
             <div id="center">
-                <div style="width: 100%;height: 5%;background-color: #3c8dbc;border-radius: 4px 4px 0px 0px;">
+                <div style="width: 100%;height: 8%;background-color: #3c8dbc;">
                     <img id="img_button" onmouseover="changeSrc(this,true)" onmouseout="changeSrc(this,false)" src="<c:url value="/icon/suo_fang.png"/>" width="2%" style="float: right;margin-right: 0.5%;margin-top: 0.5%" onclick="hide();"></img>
                 </div>
                 <iframe id="centerIframe" name="centerIframe"></iframe>
@@ -394,13 +395,15 @@
             document.getElementById('right').style.marginTop = '0%';
             document.getElementById('right').style.marginLeft = '84%';
             document.getElementById('right').style.borderRadius = '0px';
+            document.getElementById('right').style.backgroundColor = '#222d32';
+            document.getElementById('right').style.boxShadow = 'none';
             document.getElementById('headBox').style.width = '100%';
             document.getElementById('headBox').style.height = '8%';
             document.getElementById('headBox').style.marginBottom = '5%';
             document.getElementById('headBox').style.boxShadow = '0px 2px 10px 0px rgba(0,0,0,0.1)';
             document.getElementById('msgBoxContainer').style.height = '87%';
             document.getElementById('userBox').style.display = 'block';
-            document.getElementById('center').style.marginTop = '.5%';
+            document.getElementById('center').style.marginTop = '0%';
             var eles = document.getElementsByClassName('positionNameBox');
             for (var i = 0; i < eles.length; i++) {
                 eles[i].style.width = '50%';
@@ -477,6 +480,8 @@
             document.getElementById('right').style.marginTop = '10%';
             document.getElementById('right').style.marginLeft = '95%';
             document.getElementById('right').style.borderRadius = '5px 0px 0px 5px';
+            document.getElementById('right').style.boxShadow = '0px 0px 20px rgba(0,0,0,.5)';
+            document.getElementById('right').style.backgroundColor = 'white';
             document.getElementById('userBox').style.display = 'none';
             document.getElementById('headBox').style.width = '0%';
             document.getElementById('headBox').style.height = '0%';

@@ -25,7 +25,7 @@
             font-size: .8rem;
         }
         .videoBox {
-            width: 59%;
+            width: 58%;
             height: 94%;
             margin-right: 1%;
             padding: 1%;
@@ -76,7 +76,7 @@
             float: left;
         }
         #last {
-            width: 97.5%;
+            width: 97%;
             height: 49.5%;
             margin-top: 3%;
             margin-left: 1%;
@@ -93,9 +93,51 @@
             float: left;
             margin: 0%;
         }
+        .chartDiv {
+            width: 96.6%;
+            margin-left: .4%;
+            border-radius: 3px;
+            height: 48%;
+            padding: 5% 1% 1% 1%;
+            margin-top: 2%;
+            background-color: white;
+            box-shadow: 0px 0px 8px rgba(10,10,10,.2);
+        }
+        .title {
+            width: 96.4%;
+            height: 5%;
+            padding-top: 1%;
+            padding-left: 1%;
+            margin-top: -5%;
+            position: absolute;
+            border-radius: 3px 3px 0px 0px;
+            margin-left: -0.95%;
+            background-color: rgb(253,253,253);
+            border-bottom: 1px rgba(0,0,0,.1) solid;
+        }
+        .title img {
+            float: left;
+        }
+        .title span {
+            color: #777;
+            font-size: .8rem;
+            display: block;
+            float: left;
+            margin-top: .5%;
+            margin-left: .5%;
+        }
+        .guidanceDiv {
+            width: 96.6%;
+            margin-left: .4%;
+            border-radius: 3px;
+            padding: 5% 1% 1% 1%;
+            margin-top: 2%;
+            background-color: white;
+            box-shadow: 0px 0px 8px rgba(10,10,10,.2);
+        }
     </style>
 </head>
-<body style="background-color: rgba(255,255,255,0.98)">
+<body style="overflow-x: hidden;">
     <div>
         <div style="width: 98%;margin-bottom: 10px;"><h3>${position}</h3></div>
         <div style="height: 50%;">
@@ -128,21 +170,48 @@
                 </div>
             </div>
             <div align="center" class="videoBox">
-                <img id="imgData" style="height: 15%;margin-top: 20%" src="<c:url value="/image/loading.gif"/>"/>
+                <div style="width: 100%;height: 100%;border-radius: 3px;background-color: rgba(0,0,0,.01)">
+                    <img id="imgData" style="height: 100%;width:100%" src="<c:url value="/image/loading.gif"/>"/>
+                </div>
             </div>
         </div>
     </div>
-    <div style="width: 100%;height: 500px;padding-top: 10px">
-        <div style="border: 1px solid;width: 100%;height: 400px;">
-            <div id="chart" style="width: 100%;height: 50%;margin-left: 1%;"></div>
+    <div class="chartDiv">
+        <div class="title">
+            <img height="80%" src="<c:url value="/icon/chart.png"/>">
+            <span>人流变化趋势</span>
+        </div>
+        <div id="chart" style="width: 98%;height: 100%;margin-left: 1%;"></div>
+    </div>
+    <div class="guidanceDiv">
+        <div class="title">
+            <img height="80%" src="<c:url value="/icon/guidance.png"/>">
+            <span>疏导人员推荐</span>
+        </div>
+        <div style="width: 100%;height: 50%;">
+            <form action="" method="post">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </table>
+            </form>
         </div>
     </div>
+
 <script>
 
     var myChart = echarts.init(document.getElementById('chart'));
-    var date = ['2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00'];
-    var data = [20,200,86,10,15,68,400,26,65,165,65,86,35,300,
-    65];
+    var date = ['2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00'
+        ,'2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00','2019/5/01/22:12:00'];
+    var data = [60,62,63,65,70,80,75,90,95,100,95,94,93,92,90,85,75,70,60,50,40];
+    var max = Math.max.apply(null,data);
+    max = max + max * 0.2
 
     var url = "ws://localhost:8080/realTimeData.action?isEdge=false&uid=" + "${receptionUser.uid}"
     var wc =new WebSocket(url);
@@ -190,7 +259,6 @@
 
     option = {
         xAxis: {
-            show:false,
             type: 'category',
             boundaryGap: false,
             data: date
@@ -199,9 +267,10 @@
             trigger: 'axis'
         },
         yAxis: {
-            show:false,
             boundaryGap: [0, '50%'],
-            type: 'value'
+            type: 'value',
+            max: max,
+            axisLine: {onZero: false}
         },
         grid: {
             left: 0,
@@ -213,9 +282,7 @@
             {
                 name:'人数',
                 type:'line',
-                smooth:true,
-                symbol: 'none',
-                color: 'none',
+                color: 'rgba(0,0,0,.3)',
                 areaStyle: {
                     color: '#2894FF'
                 },
@@ -228,7 +295,7 @@
                         color: 'red'
                     },
                     data: [{
-                        yAxis: 20
+                        yAxis: 50
                     }]
                 }
             }

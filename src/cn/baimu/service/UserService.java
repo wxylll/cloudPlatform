@@ -43,4 +43,11 @@ public interface UserService {
      */
     public User login(String username, String password);
 
+    /**
+     * 根据详细地址获取直辖用户（管辖范围包含该地点，且有最小管辖范围的用户）
+     * @return
+     * @throws Exception
+     */
+    public User findCrownUser(String position) throws Exception;
+
 }
