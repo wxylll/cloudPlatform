@@ -57,4 +57,9 @@ public class EdgeTerminalServiceImpl implements EdgeTerminalService {
         edgeTerminalMapper.unBound(uid);
     }
 
+    @Override
+    public EdgeTerminal getEdgeTerminal(String eid) throws Exception {
+        return edgeTerminalMapper.getEdgeTerminal(eid);
+    }
+
 }

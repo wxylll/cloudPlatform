@@ -12,11 +12,9 @@ import java.util.Map;
 public class HandshakeInterceptor extends HttpSessionHandshakeInterceptor {
 
     @Override
-    public boolean beforeHandshake(ServerHttpRequest request,
-                                   ServerHttpResponse response, WebSocketHandler wsHandler,
-                                   Map<String, Object> attributes) throws Exception {
+    public boolean beforeHandshake(ServerHttpRequest request, ServerHttpResponse response, WebSocketHandler wsHandler, Map<String, Object> attributes) throws Exception {
+        //获取参数
         HttpServletRequest req = ((ServletServerHttpRequest) request).getServletRequest();
-        System.out.println(req.getParameter("isEdge") + " " + req.getParameter("eid") + " " + req.getParameter("uid"));
         attributes.put("isEdge",req.getParameter("isEdge"));
         if (req.getParameter("eid") != null)
             attributes.put("eid",req.getParameter("eid"));
@@ -26,9 +24,7 @@ public class HandshakeInterceptor extends HttpSessionHandshakeInterceptor {
     }
 
     @Override
-    public void afterHandshake(ServerHttpRequest request,
-                               ServerHttpResponse response, WebSocketHandler wsHandler,
-                               Exception ex) {
+    public void afterHandshake(ServerHttpRequest request, ServerHttpResponse response, WebSocketHandler wsHandler, Exception ex) {
         super.afterHandshake(request, response, wsHandler, ex);
     }
 

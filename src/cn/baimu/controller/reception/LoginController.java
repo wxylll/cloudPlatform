@@ -31,6 +31,9 @@ public class LoginController {
     //登录
     @RequestMapping("/login")
     public String login(@RequestParam String username, @RequestParam String password, Model model, HttpSession httpSession){
+        if (httpSession.getAttribute("receptionUser") != null) {
+            model.addAttribute("loginError","同一浏览器只能登录一个账号！");
+        }
         User user = userService.login(username,password);
         if (user != null) {
             httpSession.setAttribute("receptionUser",user); //保存用户信息
@@ -46,6 +49,13 @@ public class LoginController {
             model.addAttribute("loginError","用户名或密码错误！");
             return "reception/login/login";
         }
+    }
+
+    //退出
+    @RequestMapping("/logout")
+    public String logout(HttpSession httpSession) {
+        httpSession.removeAttribute("receptionUser");
+        return "reception/login/login";
     }
 
 }

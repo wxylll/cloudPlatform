@@ -32,4 +32,8 @@
         select count(*) from edgeterminal where monitoring like #{value}
     </select>
 
+    <select id="getEdgeTerminal" parameterType="String" resultType="cn.baimu.po.EdgeTerminal">
+        select * from edgeterminal where eid = #{value}
+    </select>
+
 </mapper>

@@ -295,9 +295,7 @@
                 </ul>
             </div>
             <div id="center">
-                <div style="width: 100%;height: 8%;background-color: #3c8dbc;">
-                    <img id="img_button" onmouseover="changeSrc(this,true)" onmouseout="changeSrc(this,false)" src="<c:url value="/icon/suo_fang.png"/>" width="2%" style="float: right;margin-right: 0.5%;margin-top: 0.5%" onclick="hide();"></img>
-                </div>
+                <div style="width: 100%;height: 8%;background-color: #3c8dbc;"></div>
                 <iframe id="centerIframe" name="centerIframe"></iframe>
             </div>
         </div>

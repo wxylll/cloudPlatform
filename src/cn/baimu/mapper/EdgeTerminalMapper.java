@@ -61,4 +61,12 @@ public interface EdgeTerminalMapper {
      */
     public int findByMonitoring(String monitoring) throws Exception;
 
+    /**
+     * 判断边缘端是否存在
+     * @param eid
+     * @return
+     * @throws Exception
+     */
+    public EdgeTerminal getEdgeTerminal(String eid) throws Exception;
+
 }

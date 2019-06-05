@@ -20,9 +20,21 @@
         }
         h3 {
             font-size: 1rem;
+            display: inline-block;
         }
         h4 {
             font-size: .8rem;
+        }
+        a {
+            text-decoration:none;
+            out-line: none;
+            color: black;
+        }
+        a span {
+            font-size: medium;
+            font-family: 黑体;
+            font-weight: bold;
+            opacity: .5;
         }
         .videoBox {
             width: 58%;
@@ -139,7 +151,7 @@
 </head>
 <body style="overflow-x: hidden;">
     <div>
-        <div style="width: 98%;margin-bottom: 10px;"><h3>${position}</h3></div>
+        <div style="width: 98%;margin-bottom: 10px;"><a href=""><h3>实时监控</h3>&nbsp;<span>&gt;</span>&nbsp;</a><h3>${position}</h3></div>
         <div style="height: 50%;">
             <div style="width: 38%;height: 100%;float: left;color: white">
                 <div id="history">
@@ -171,7 +183,7 @@
             </div>
             <div align="center" class="videoBox">
                 <div style="width: 100%;height: 100%;border-radius: 3px;background-color: rgba(0,0,0,.01)">
-                    <img id="imgData" style="height: 100%;width:100%" src="<c:url value="/image/loading.gif"/>"/>
+                    <img id="imgData" style="height: 15%;margin-top: 20%" src="<c:url value="/image/loading.gif"/>"/>
                 </div>
             </div>
         </div>
@@ -213,23 +225,23 @@
     var max = Math.max.apply(null,data);
     max = max + max * 0.2
 
-    var url = "ws://localhost:8080/realTimeData.action?isEdge=false&uid=" + "${receptionUser.uid}"
-    var wc =new WebSocket(url);
-    var wc2 =new WebSocket("ws://localhost:8080/socket.action");
-    wc.onopen = function(evt) {
-        wc.binaryType = 'blob';
-        ws.send("Hello WebSockets!");
+    var curWwwPath = window.document.location.href;
+    var pathname = window.document.location.pathname; //文件在服务器相对地址 /ISV/demo.aspx
+    var pos = curWwwPath.indexOf(pathname);
+    var localhostPath = curWwwPath.substring(7, pos);
+
+    var url1 = "ws://" + localhostPath + "/realTimeVideoData.action?isEdge=false&uid=" + "${receptionUser.uid}";
+    var wc1 =new WebSocket(url1);
+
+    wc1.onopen = function(evt) {
+        wc1.binaryType = 'blob';
     };
 
-    wc2.onopen = function(evt) {
-        wc2.binaryType = 'arraybuffer'
+    wc1.onerror = function() {
+        alert(wc1.url + "****")
     }
 
-    wc.onerror = function() {
-        alert(wc.url)
-    }
-
-    wc.onmessage = function(evt) {
+    wc1.onmessage = function(evt) {
         var reader = new FileReader();
         reader.readAsDataURL(evt.data);
         reader.onload = function(evt){
@@ -240,6 +252,17 @@
             }
         }
     };
+
+    wc1.onclose = function(evt) {
+        wc1 =new WebSocket(url1);
+    };
+
+    var url2 = "ws://" + localhostPath + "/realTimeTextData.action?isEdge=false&uid=" + "${receptionUser.uid}";
+    var wc2 =new WebSocket(url2);
+
+    wc2.onopen = function(evt) {
+        wc2.binaryType = 'arraybuffer'
+    }
 
     wc2.onmessage = function(evt) {
         data.push(evt.data)
@@ -253,9 +276,15 @@
         myChart.setOption(option);
     };
 
-    wc.onclose = function(evt) {
-        document.getElementById('msg').innerText += "Connection closed."
+    wc2.onerror = function() {
+        alert(wc2.url + "****")
+    }
+
+    wc2.onclose = function(evt) {
+        wc2 =new WebSocket(url2);
     };
+
+
 
     option = {
         xAxis: {
