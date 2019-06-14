@@ -29,11 +29,11 @@ public interface OutlierService {
     public List<Outlier> combinationQuery(String position, Date startTime, Date endTime) throws Exception;
 
     /**
-     * 统计指定时间之后所有地点的人流爆发次数
-     * @param startTime null为无限制
+     * 统计人流爆发次数
+     * @param jurisdiction
      * @return
      */
-    public List<Map<String,Integer>> countOutbreaks(Date startTime) throws Exception;
+    public List<Map<String,Integer>> countOutbreaks(String jurisdiction) throws Exception;
 
     /**
      * 统计各个地点分类下的人流爆发次数

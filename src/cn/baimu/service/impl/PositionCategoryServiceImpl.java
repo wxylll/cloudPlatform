@@ -21,4 +21,24 @@ public class PositionCategoryServiceImpl implements PositionCategoryService {
     public void add(PositionCategory positionCategory) throws Exception {
         positionCategoryMapper.add(positionCategory);
     }
+
+    @Override
+    public void update(PositionCategory positionCategory) throws Exception {
+        positionCategoryMapper.update(positionCategory);
+    }
+
+    @Override
+    public void remove(String pcid) throws Exception {
+        positionCategoryMapper.remove(pcid);
+    }
+
+    @Override
+    public PositionCategory get(String pcid) throws Exception {
+        return positionCategoryMapper.get(pcid);
+    }
+
+    @Override
+    public int isUsed(String pcid) throws Exception {
+        return positionCategoryMapper.isUsed(pcid);
+    }
 }

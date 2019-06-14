@@ -6,12 +6,14 @@ import cn.baimu.po.Outlier;
 import cn.baimu.po.User;
 import cn.baimu.service.EdgeTerminalService;
 import cn.baimu.service.UserService;
+import cn.baimu.utils.StringUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Date;
 import java.util.List;
@@ -30,9 +32,11 @@ public class LoginController {
 
     //登录
     @RequestMapping("/login")
-    public String login(@RequestParam String username, @RequestParam String password, Model model, HttpSession httpSession){
-        if (httpSession.getAttribute("receptionUser") != null) {
+    public String login(@RequestParam String username, @RequestParam String password, Model model, HttpSession httpSession, HttpServletRequest request){
+        User hasUser = (User) httpSession.getAttribute("receptionUser");
+        if (hasUser != null && hasUser.getUsername().equals("username")) {
             model.addAttribute("loginError","同一浏览器只能登录一个账号！");
+            return "reception/login/login";
         }
         User user = userService.login(username,password);
         if (user != null) {
@@ -44,7 +48,12 @@ public class LoginController {
                 e.printStackTrace();
             }
             httpSession.setAttribute("jurisdictions", edgeTerminals);
-            return "reception/main";
+
+            String ua = request.getHeader("User-Agent");
+            if (StringUtil.checkAgentIsMobile(ua))
+                return "mobile/main";
+            else
+                return "reception/main";
         }else {
             model.addAttribute("loginError","用户名或密码错误！");
             return "reception/login/login";
@@ -54,7 +63,7 @@ public class LoginController {
     //退出
     @RequestMapping("/logout")
     public String logout(HttpSession httpSession) {
-        httpSession.removeAttribute("receptionUser");
+        httpSession.invalidate();
         return "reception/login/login";
     }
 

@@ -25,9 +25,9 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void delete(User user) throws Exception {
-        edgeTerminalMapper.unBound(user.getUid()); //解除用户与管辖范围内边缘端的绑定关系
-        userMapper.delete(user); //删除用户
+    public void delete(String uid) throws Exception {
+        edgeTerminalMapper.unBound(uid); //解除用户与管辖范围内边缘端的绑定关系
+        userMapper.delete(uid); //删除用户
     }
 
     @Override
@@ -70,6 +70,16 @@ public class UserServiceImpl implements UserService {
             }
         }
         return null;
+    }
+
+    @Override
+    public void update(User user) throws Exception {
+        userMapper.update(user);
+    }
+
+    @Override
+    public User get(String uid) throws Exception {
+        return userMapper.get(uid);
     }
 
     /**

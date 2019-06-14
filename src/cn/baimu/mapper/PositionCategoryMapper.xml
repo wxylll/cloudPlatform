@@ -10,4 +10,20 @@
         insert into positioncategory values(#{pcid},#{categoryName})
     </insert>
 
+    <select id="isUsed" parameterType="String" resultType="int">
+        select sum(p) from (select count(*) p from edgeterminal where pcid = #{value} union all select count(*) p from outliers where pcid = #{value}) un
+    </select>
+
+    <select id="get" parameterType="String" resultType="cn.baimu.po.PositionCategory">
+        select * from positioncategory where pcid = #{value}
+    </select>
+
+    <update id="update" parameterType="cn.baimu.po.PositionCategory">
+        update positioncategory set categoryName = #{categoryName} where pcid = #{pcid}
+    </update>
+
+    <delete id="remove" parameterType="String">
+        delete from positioncategory where pcid = #{pcid}
+    </delete>
+
 </mapper>

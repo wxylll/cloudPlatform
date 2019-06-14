@@ -11,19 +11,13 @@
 <html>
 <head>
     <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/layui/css/layui.css" media="all">
 </head>
 <style>
-    ._background {
-        border-radius: 3px;background-color: darkgray;color: white;padding: .1% 2% 0% 2%;display: inline-block
-    }
-    * {
-        font-family: 微软雅黑;
-    }
-    h3 {
-        font-size: 1rem;
-        font-weight: bold;
-    }
+    ._background {border-radius: 3px;background-color: darkgray;color: white;padding: .1% 2% 0% 2%;display: inline-block}
+    * {font-family: 微软雅黑;}
+    h3 {font-size: 1rem;font-weight: bold;}
 </style>
 <body>
     <div align="center" style="width: 100%;height: 100%">
@@ -34,8 +28,13 @@
     </div>
 
 <script src="${pageContext.request.contextPath}/layui/layui.js"></script>
-
+<script src="${pageContext.request.contextPath}/js/jquery-3.3.1.js"></script>
 <script>
+    //防止页面后退
+    history.pushState(null, null, document.URL);
+    window.addEventListener('popstate', function () {
+        history.pushState(null, null, document.URL);
+    });
 
     //数据转换处理
     var data = [<c:forEach items="${edgeTerminals}" var="edgeTerminal">
@@ -75,7 +74,7 @@
                     }}
                 ,{field: 'isOnline', title: '连接状态'
                     ,templet: function(d){
-                        if (d.isOnline == true)
+                        if (d.isOnline == 'true')
                             return '<span class="_background" style="background-color:green">正常</span>'
                         else
                             return '<span class="_background" style="background-color:#c00">断开</span>'
@@ -86,9 +85,13 @@
         table.on('row(test)', function(obj){
             var data = obj.data;
 
-            layer.alert(JSON.stringify(data), {
-                title: '当前行数据：'
-            });
+            layer.open({
+                type: 2,
+                area: ['500px', '400px'],
+                fixed: false, //不固定
+                maxmin: true,
+                content: ['${pageContext.request.contextPath}/getTerminal.action?eid=' + data.eid,'no']
+            })
 
             //标注选中样式
             obj.tr.addClass('layui-table-click').siblings().removeClass('layui-table-click');

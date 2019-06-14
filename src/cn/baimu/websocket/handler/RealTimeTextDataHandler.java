@@ -14,22 +14,19 @@ public class RealTimeTextDataHandler extends TextWebSocketHandler {
     private EdgeTerminalService edgeTerminalService;
 
     //用户连接
-    private static ConcurrentHashMap<String, HashSet<RealTimeTextDataHandler>> userWebSocketSet = new ConcurrentHashMap<>();
+    private static ConcurrentHashMap<String, HashSet<WebSocketSession>> userWebSocketSet = new ConcurrentHashMap<>();
     //边缘端连接
-    private static ConcurrentHashMap<String, RealTimeTextDataHandler> edgeWebSocketSet = new ConcurrentHashMap<>();
-    //与客户端的链接会话
-    private WebSocketSession session;
+    private static ConcurrentHashMap<String, WebSocketSession> edgeWebSocketSet = new ConcurrentHashMap<>();
+
     //标志边缘端是否接收到消息
-    private boolean hasReceived;
+    private static HashSet<String> hasReceived = new HashSet<>();
 
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
-        System.out.println(message.getPayload());
         if (message.getPayload().equals("received")) {
-            hasReceived = true; //确认对方收到消息
+            hasReceived.add((String)session.getAttributes().get("eid")); //确认对方收到消息
             System.out.println("received:" + message.getPayload());
         }
-        System.out.println(message.getPayload());
         super.handleTextMessage(session, message);
     }
 
@@ -40,21 +37,17 @@ public class RealTimeTextDataHandler extends TextWebSocketHandler {
         if (Boolean.valueOf( (String)session.getAttributes().get("isEdge")) ) {
             String eid = (String) session.getAttributes().get("eid");
             if (edgeTerminalService.getEdgeTerminal(eid) != null) { //判断边缘端是否合法，合法则允许连接,否则关闭连接
-                this.session = session;
-                edgeWebSocketSet.put(eid, this);
-                System.out.println(eid + ":edge连接成功！");
+                edgeWebSocketSet.put(eid, session);
             }else {
                 session.sendMessage(new TextMessage("非法的边缘端！"));
                 session.close();
             }
         } else {
             String uid = (String) session.getAttributes().get("uid");
-            HashSet<RealTimeTextDataHandler> set = userWebSocketSet.get(uid);
+            HashSet<WebSocketSession> set = userWebSocketSet.get(uid);
             set = null == set ? new HashSet<>() : set;
-            this.session = session;
-            set.add(this);
+            set.add(session);
             userWebSocketSet.put(uid, set);
-            System.out.println(uid + ":连接成功！");
         }
         super.afterConnectionEstablished(session);
     }
@@ -65,13 +58,11 @@ public class RealTimeTextDataHandler extends TextWebSocketHandler {
 
         if (Boolean.valueOf((String)session.getAttributes().get("isEdge"))) {
             edgeWebSocketSet.remove(session.getAttributes().get("eid"));
-            System.out.println(session.getAttributes().get("eid") + ":edge连接关闭！");
         } else {
-            HashSet<RealTimeTextDataHandler> set = userWebSocketSet.get(session.getAttributes().get("uid"));
-            set.remove(this);
+            HashSet<WebSocketSession> set = userWebSocketSet.get(session.getAttributes().get("uid"));
+            set.remove(session);
             if (set.size() == 0)
                 userWebSocketSet.remove(session.getAttributes().get("uid"));
-            System.out.println(session.getAttributes().get("uid") + ":连接关闭！");
         }
 
         super.afterConnectionClosed(session, status);
@@ -79,13 +70,18 @@ public class RealTimeTextDataHandler extends TextWebSocketHandler {
 
     /**
      * 向指定用户发送消息
+     * 内容格式为 消息类型：内容
+     * msg表示提示信息，data表示数据信息，如：
+     *      msg:new 表示要提示用户有新的边缘端接入
+     *      data:250,2019-6-6 15:22:20,10086表示边缘端推送来了数据需要进行展示，
+     *          具体意义为：此次爆发当前人流为250,此数据在2019-6-6 15:22:20获取,来自id为10086的边缘端
      * @param message
      * @param uid
      */
     public void sendToUser(String message, String uid){
         if (userWebSocketSet.get(uid) != null) {
-            for (RealTimeTextDataHandler handler : userWebSocketSet.get(uid)) {
-                handler.sendText(message);
+            for (WebSocketSession session : userWebSocketSet.get(uid)) {
+                sendText(session, message);
             }
         }
     }
@@ -97,11 +93,19 @@ public class RealTimeTextDataHandler extends TextWebSocketHandler {
      * @return 返回true表示边缘端接收到消息，false表示未接收到
      */
     public boolean sendToEdge(String message, String eid){
-        hasReceived = false;
-        edgeWebSocketSet.get(eid).sendText(message);
-        for (int i = 0; i < 1000; i++) { //最大等待时间1000*100毫秒
-            if (hasReceived) {
-                System.out.println("对方已收到消息！");
+        /*
+         *此方法需确保边缘端收到发送的消息，实现方法为：
+         *      初始将hasReceived设为false，
+         *      当handleTextMessage接收到回执信息后将其置为true
+         *      在此期间，每隔10ms确认一次hasReceived是否为true，是则返回成功信息
+         *      最多确认3000次，即等待时间为30秒
+         *      若10秒后未确认到成功信息，则认为发送失败，返回失败信息
+         */
+        hasReceived.remove(eid);
+        if (edgeWebSocketSet.size() == 0 || edgeWebSocketSet.get(eid) == null) return false;
+        sendText(edgeWebSocketSet.get(eid), message);
+        for (int i = 0; i < 3000; i++) { //最大等待时间1000*10毫秒
+            if (hasReceived.contains(eid)) {
                 return true;
             }
             try {
@@ -110,7 +114,6 @@ public class RealTimeTextDataHandler extends TextWebSocketHandler {
                 e.printStackTrace();
             }
         }
-        System.out.println("对方未收到消息！");
         return false;
     }
 
@@ -118,7 +121,7 @@ public class RealTimeTextDataHandler extends TextWebSocketHandler {
      * 推送文本消息
      * @param message
      */
-    public void sendText(String message) {
+    public void sendText(WebSocketSession session, String message) {
         try {
             session.sendMessage(new TextMessage(message));
         } catch (Exception e) {
@@ -132,7 +135,7 @@ public class RealTimeTextDataHandler extends TextWebSocketHandler {
      * @return
      */
     public boolean edgeIsOnline(String eid) {
-        return edgeWebSocketSet.get(eid) != null;
+        return edgeWebSocketSet.size() > 0 && edgeWebSocketSet.get(eid) != null;
     }
 
     /**
@@ -141,7 +144,7 @@ public class RealTimeTextDataHandler extends TextWebSocketHandler {
      * @return
      */
     public boolean userIsOnline(String uid) {
-        return userWebSocketSet.get(uid) != null;
+        return userWebSocketSet.size() > 0 && userWebSocketSet.get(uid) != null;
     }
 
 }

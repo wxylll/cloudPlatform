@@ -25,8 +25,8 @@ public class OutlierServiceImpl implements OutlierService {
     }
 
     @Override
-    public List<Map<String, Integer>> countOutbreaks(Date startTime) throws Exception {
-        return outlierMapper.countOutbreaks(startTime);
+    public List<Map<String, Integer>> countOutbreaks(String jurisdiction) throws Exception {
+        return outlierMapper.countOutbreaks(jurisdiction);
     }
 
     @Override

@@ -26,4 +26,6 @@
 
     <bean id="positionCategoryService" class="cn.baimu.service.impl.PositionCategoryServiceImpl"/>
 
+    <bean id="tempDataService" class="cn.baimu.service.impl.TempDataServiceImpl"/>
+
 </beans>

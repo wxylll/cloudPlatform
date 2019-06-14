@@ -2,9 +2,10 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.baimu.mapper.OutlierMapper">
 
-    <select id="findAll" resultType="cn.baimu.po.Outlier">
+    <select id="findAll" parameterType="String" resultType="cn.baimu.po.Outlier">
         select oid,position,(select categoryName from positioncategory as p where p.pcid = o.pcid) positionCategory,
-        startTime,duration,maxFlow,averageFlow,video,(select schemeName from scheme as s where s.sid = o.sid) scheme,numberOfSecurity from outliers as o;
+        startTime,duration,maxFlow,averageFlow,video,(select schemeName from scheme as s where s.sid = o.sid) scheme,numberOfSecurity from outliers as o
+        where position like '%${value}'
     </select>
 
     <select id="combinationQuery" resultType="cn.baimu.po.Outlier">
@@ -20,13 +21,12 @@
         <if test="arg2!=null">
             and o.startTime &lt; #{arg2}
         </if>
+        order by startTime
     </select>
 
-    <select id="countOutbreaks" resultType="hashMap">
+    <select id="countOutbreaks" parameterType="String" resultType="hashMap">
         select position,count(*) as outbreaks from outliers
-        <if test="arg0!=null">
-            where startTime &gt; #{arg0}
-        </if>
+        where position like '${value}%'
         group by position
         order by outbreaks desc
     </select>

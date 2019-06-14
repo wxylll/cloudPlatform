@@ -9,8 +9,35 @@ public class SecurityStaff {
     private String name; //安保人员姓名
     private String photo; //照片
     private String contact; //联系方式
-    private boolean workStatus; //在职状态
+    private boolean workStatus; //在职状态(0空闲,1任务中)
     private String workPlace; //在职地点
+    private int distance; //到事发地距离
+    private int time; //到事发地所需时间
+    private String assign; //被指派去的地点
+
+    public String getAssign() {
+        return assign;
+    }
+
+    public void setAssign(String assign) {
+        this.assign = assign;
+    }
+
+    public int getDistance() {
+        return distance;
+    }
+
+    public void setDistance(int distance) {
+        this.distance = distance;
+    }
+
+    public int getTime() {
+        return time;
+    }
+
+    public void setTime(int time) {
+        this.time = time;
+    }
 
     public String getSsid() {
         return ssid;

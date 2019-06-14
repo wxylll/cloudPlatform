@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.baimu.mapper.TempDataMapper">
+
+    <insert id="insertDataItem" parameterType="cn.baimu.po.TempData">
+        insert into temp_data_item values(null,#{now},#{time},#{eid})
+    </insert>
+
+    <select id="findAllData" parameterType="String" resultType="cn.baimu.po.TempData">
+        select now,time,eid from temp_data_item where eid = #{value} order by time
+    </select>
+
+    <delete id="removeAllData" parameterType="String">
+        delete from temp_data_item where eid = #{value}
+    </delete>
+
+    <insert id="insertRecord" parameterType="cn.baimu.po.TempRecord">
+        insert into temp_record values(null,#{position},#{category},#{startTime},#{numberOfStaff},#{status},#{eid},#{uid})
+    </insert>
+
+    <update id="updateRecord" parameterType="cn.baimu.po.TempRecord">
+        update temp_record set numberOfStaff = #{numberOfStaff},status = #{status} where eid = #{eid}
+    </update>
+
+    <select id="findAllRecord" parameterType="String" resultType="cn.baimu.po.TempRecord">
+        select position,category,startTime,numberOfStaff,(select max(now) from temp_data_item as td1 where td1.eid = tr.eid) max,
+        (select avg(now) from temp_data_item as td2 where td2.eid = tr.eid) average,
+        status,eid,uid from temp_record as tr where uid = #{value}
+    </select>
+
+    <select id="findRecord" parameterType="String" resultType="cn.baimu.po.TempRecord">
+        select position,category,startTime,numberOfStaff,(select max(now) from temp_data_item as td1 where td1.eid = tr.eid) max,
+        (select avg(now) from temp_data_item as td2 where td2.eid = tr.eid) average,
+        status,eid,uid from temp_record as tr where eid = #{value}
+    </select>
+
+    <delete id="removeRecord" parameterType="String">
+        delete from temp_record where eid = #{value}
+    </delete>
+
+</mapper>

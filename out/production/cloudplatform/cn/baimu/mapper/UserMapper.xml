@@ -3,11 +3,11 @@
 <mapper namespace="cn.baimu.mapper.UserMapper">
 
     <insert id="add" parameterType="cn.baimu.po.User">
-        insert into users values(#{id},#{username},#{password},#{jurisdiction})
+        insert into users values(#{uid},#{username},#{password},#{jurisdiction})
     </insert>
 
-    <delete id="delete" parameterType="cn.baimu.po.User">
-        delete from users where username = #{username}
+    <delete id="delete" parameterType="String">
+        delete from users where username = #{value}
     </delete>
 
     <select id="findAll" resultType="cn.baimu.po.User">
@@ -22,4 +22,11 @@
         select * from users where jurisdiction like '%${value}'
     </select>
 
+    <update id="update" parameterType="String">
+        update users set username=#{username},password=#{password},jurisdiction=#{jurisdiction} where uid = #{uid}
+    </update>
+
+    <select id="get" parameterType="String" resultType="cn.baimu.po.User">
+        select * from users where uid = #{value}
+    </select>
 </mapper>

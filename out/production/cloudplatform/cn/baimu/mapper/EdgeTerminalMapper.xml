@@ -33,7 +33,7 @@
     </select>
 
     <select id="getEdgeTerminal" parameterType="String" resultType="cn.baimu.po.EdgeTerminal">
-        select * from edgeterminal where eid = #{value}
+        select *,(select categoryName from positioncategory p where e.pcid = p.pcid) positionCategory from edgeterminal e where eid = #{value}
     </select>
 
 </mapper>
