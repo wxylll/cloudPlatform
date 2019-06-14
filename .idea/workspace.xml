@@ -2,120 +2,17 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="cloudplatform" />
+      <artifact name="baimu" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="961bb28e-f9c9-4e52-b286-43075c098044" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/cloudplatform_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/baimu/mapper/TempDataMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/baimu/mapper/TempDataMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/baimu/po/TempData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/baimu/po/TempRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/baimu/service/TempDataService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/baimu/service/impl/TempDataServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/baimu/utils/MapUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/baimu/utils/StringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-collections-3.2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-lang3-3.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/ezmorph-1.0.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jsoup-1.11.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/add.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/add_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/icon/video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/backstage/category/add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/backstage/category/desc.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/backstage/category/show.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/backstage/login/img/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/backstage/login/img/foreground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/backstage/login/img/midground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/backstage/login/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/backstage/login/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/backstage/reception/add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/backstage/reception/desc.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/backstage/reception/show.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/mobile/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/mobile/main.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/reception/data_analysis/desc.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/reception/edgeterminal/desc.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/reception/real_time_data/no_data.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/reception/securitystaff/add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jsps/reception/securitystaff/desc.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/video/10010/2019-06-09~23-27-46.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/cloudplatform_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/cloudplatform.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/baimu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/cloudplatform.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/cloudplatform.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/cloudplatform_war.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/controller/reception/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/controller/reception/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/EdgeTerminalMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/EdgeTerminalMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/OutlierMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/OutlierMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/OutlierMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/OutlierMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/PositionCategoryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/PositionCategoryMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/PositionCategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/PositionCategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/SecurityStaffMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/SecurityStaffMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/SecurityStaffMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/SecurityStaffMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/po/SecurityStaff.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/po/SecurityStaff.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/po/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/cn/baimu/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/configs/spring/applicationContext-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/cloudplatform_war_exploded/WEB-INF/classes/configs/spring/applicationContext-service.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/controller/reception/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/controller/reception/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/EdgeTerminalMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/EdgeTerminalMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/OutlierMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/OutlierMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/OutlierMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/OutlierMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/PositionCategoryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/PositionCategoryMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/PositionCategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/PositionCategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/SecurityStaffMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/SecurityStaffMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/SecurityStaffMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/SecurityStaffMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/po/SecurityStaff.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/po/SecurityStaff.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/po/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/cn/baimu/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cloudplatform/configs/spring/applicationContext-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloudplatform/configs/spring/applicationContext-service.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/controller/backstage/BackStageLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/controller/backstage/BackStageLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/controller/backstage/PositionCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/controller/backstage/PositionCategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/controller/backstage/ReceptionUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/controller/backstage/ReceptionUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/controller/reception/DataAnalysisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/controller/reception/DataAnalysisController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/controller/reception/EdgeTerminalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/controller/reception/EdgeTerminalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/controller/reception/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/controller/reception/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/controller/reception/RealTimeDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/controller/reception/RealTimeDataController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/controller/reception/SecurityStaffController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/controller/reception/SecurityStaffController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/mapper/EdgeTerminalMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/mapper/EdgeTerminalMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/mapper/OutlierMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/mapper/OutlierMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/mapper/OutlierMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/mapper/OutlierMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/mapper/PositionCategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/mapper/PositionCategoryMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/mapper/PositionCategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/mapper/PositionCategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/mapper/SecurityStaffMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/mapper/SecurityStaffMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/mapper/SecurityStaffMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/mapper/SecurityStaffMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/po/SecurityStaff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/po/SecurityStaff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/po/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/service/OutlierService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/service/OutlierService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/service/PositionCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/service/PositionCategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/service/SecurityStaffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/service/SecurityStaffService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/service/impl/OutlierServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/service/impl/OutlierServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/service/impl/PositionCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/service/impl/PositionCategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/service/impl/SecurityStaffServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/service/impl/SecurityStaffServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/websocket/handler/RealTimeTextDataHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/websocket/handler/RealTimeTextDataHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/baimu/websocket/handler/RealTimeVideoDataHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/baimu/websocket/handler/RealTimeVideoDataHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/configs/spring/applicationContext-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/spring/applicationContext-service.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsps/backstage/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsps/backstage/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsps/reception/data_analysis/show.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsps/reception/data_analysis/show.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsps/reception/data_analysis/test.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsps/reception/data_analysis/test2.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsps/reception/edgeterminal/edgeterminal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsps/reception/edgeterminal/edgeterminal.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsps/reception/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsps/reception/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsps/reception/real_time_data/456.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsps/reception/real_time_data/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsps/reception/real_time_data/detail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsps/reception/real_time_data/guidance.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsps/reception/real_time_data/guidance.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsps/reception/securitystaff/show.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsps/reception/securitystaff/show.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsps/webscoket.jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -129,7 +26,108 @@
     <favorites_list name="cloudPlatform" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="edgeterminal.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/jsps/reception/edgeterminal/edgeterminal.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1027">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="desc.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/jsps/reception/edgeterminal/desc.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-709">
+              <caret line="57" column="77" selection-start-line="57" selection-start-column="77" selection-end-line="57" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/jsps/reception/data_analysis/show.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2799">
+              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="desc.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/jsps/reception/data_analysis/desc.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1502">
+              <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/jsps/backstage/reception/show.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1217">
+              <caret line="38" column="77" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="desc.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/jsps/backstage/reception/desc.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1064">
+              <caret line="56" column="29" lean-forward="true" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/jsps/backstage/reception/add.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="589">
+              <caret line="64" column="33" lean-forward="true" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/jsps/backstage/category/show.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-951">
+              <caret line="38" column="77" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="desc.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/jsps/backstage/category/desc.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-190">
+              <caret line="32" column="77" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/jsps/backstage/category/add.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="78" column="7" lean-forward="true" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -144,8 +142,8 @@
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="wxylll &lt;20172641@stu.ccut.edu.cn&gt;" />
-        <option value="wxylll" />
         <option value="wxy" />
+        <option value="wxylll" />
         <option value="王新元" />
       </list>
     </option>
@@ -203,8 +201,8 @@
         <option value="$PROJECT_DIR$/src/cn/baimu/service/OutlierService.java" />
         <option value="$PROJECT_DIR$/src/cn/baimu/service/impl/OutlierServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/cn/baimu/controller/reception/DataAnalysisController.java" />
-        <option value="$PROJECT_DIR$/web/jsps/reception/real_time_data/detail.jsp" />
         <option value="$PROJECT_DIR$/web/jsps/reception/real_time_data/no_data.jsp" />
+        <option value="$PROJECT_DIR$/web/jsps/reception/real_time_data/detail.jsp" />
       </list>
     </option>
   </component>
@@ -236,8 +234,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -305,74 +301,26 @@
               <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="jsps" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="jsps" type="462c0819:PsiDirectoryNode" />
-              <item name="backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="jsps" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="jsps" type="462c0819:PsiDirectoryNode" />
-              <item name="reception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="jsps" type="462c0819:PsiDirectoryNode" />
-              <item name="reception" type="462c0819:PsiDirectoryNode" />
-              <item name="data_analysis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="jsps" type="462c0819:PsiDirectoryNode" />
-              <item name="reception" type="462c0819:PsiDirectoryNode" />
-              <item name="edgeterminal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="jsps" type="462c0819:PsiDirectoryNode" />
-              <item name="reception" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="jsps" type="462c0819:PsiDirectoryNode" />
-              <item name="reception" type="462c0819:PsiDirectoryNode" />
-              <item name="real_time_data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloudPlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloudPlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="jsps" type="462c0819:PsiDirectoryNode" />
-              <item name="reception" type="462c0819:PsiDirectoryNode" />
-              <item name="securitystaff" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -668,7 +616,8 @@
       <workItem from="1560411479364" duration="24652000" />
       <workItem from="1560445806435" duration="25905000" />
       <workItem from="1560497499008" duration="2121000" />
-      <workItem from="1560500012594" duration="27305000" />
+      <workItem from="1560500012594" duration="28319000" />
+      <workItem from="1560535581894" duration="2442000" />
     </task>
     <task id="LOCAL-00001" summary="一点更改">
       <created>1554283766730</created>
@@ -747,11 +696,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559714418137</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="终于完了！">
+      <created>1560534640168</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1560534640168</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="788893000" />
+    <option name="totallyTimeSpent" value="792349000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -766,8 +722,8 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" weight="0.329429" />
-      <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32064423" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5013405" side_tool="true" visible="true" weight="0.3191801" />
+      <window_info anchor="bottom" id="Application Servers" order="12" sideWeight="0.49932975" weight="0.32064423" />
       <window_info anchor="right" id="Maven Projects" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
@@ -778,18 +734,18 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39970717" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329429" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.329429" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49865952" weight="0.329429" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32796487" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3191801" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.3191801" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48817205" visible="true" weight="0.29289544" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48817205" visible="true" weight="0.2969169" />
       <window_info anchor="right" id="Bean Validation" order="8" />
-      <window_info id="Web" order="6" sideWeight="0.5064655" side_tool="true" weight="0.26742628" />
+      <window_info id="Web" order="6" sideWeight="0.51182795" side_tool="true" weight="0.29289544" />
       <window_info anchor="right" id="SciView" order="10" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" sideWeight="0.51182795" side_tool="true" weight="0.3230563" />
@@ -843,7 +799,8 @@
     <MESSAGE value="上传" />
     <MESSAGE value="新增数据分析功能" />
     <MESSAGE value="最后阶段" />
-    <option name="LAST_COMMIT_MESSAGE" value="最后阶段" />
+    <MESSAGE value="终于完了！" />
+    <option name="LAST_COMMIT_MESSAGE" value="终于完了！" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -854,13 +811,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/jsps/backstage/login/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="96" column="23" lean-forward="true" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/jsps/mobile/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
@@ -896,11 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding>
-            <element signature="e#317#318#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -998,9 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1011,125 +953,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/reception/securitystaff/show.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="38" column="77" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/reception/securitystaff/desc.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" selection-end-column="77" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/reception/securitystaff/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="49" column="77" selection-start-line="49" selection-start-column="77" selection-end-line="49" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/reception/edgeterminal/edgeterminal.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/reception/edgeterminal/desc.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="57" column="77" selection-start-line="57" selection-start-column="77" selection-end-line="57" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/reception/data_analysis/desc.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="81" selection-start-line="15" selection-start-column="81" selection-end-line="15" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/backstage/reception/show.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="38" column="77" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/backstage/category/show.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="38" column="77" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/backstage/category/desc.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="32" column="77" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/backstage/category/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-513">
-          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/backstage/reception/desc.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="57" selection-start-line="57" selection-end-line="69" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/reception/data_analysis/show.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="15" column="81" selection-start-line="15" selection-start-column="81" selection-end-line="15" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/baimu/po/SecurityStaff.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#631#632#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1188,29 +1015,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/reception/real_time_data/detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="49" column="85" selection-start-line="49" selection-start-column="85" selection-end-line="49" selection-end-column="85" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/reception/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/baimu/mapper/OutlierMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -1222,13 +1026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsps/backstage/reception/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="72" column="43" lean-forward="true" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -1260,13 +1057,156 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/reception/real_time_data/detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1538">
+          <caret line="354" column="18" selection-start-line="354" selection-start-column="18" selection-end-line="354" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/reception/real_time_data/guidance.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2109">
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/reception/securitystaff/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="79" column="13" lean-forward="true" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/reception/securitystaff/desc.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1102">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/reception/securitystaff/show.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1102">
+          <caret line="38" column="77" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/reception/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8252">
+          <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/reception/edgeterminal/edgeterminal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1027">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/reception/edgeterminal/desc.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-709">
+          <caret line="57" column="77" selection-start-line="57" selection-start-column="77" selection-end-line="57" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/reception/data_analysis/show.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2799">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/reception/data_analysis/desc.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1502">
+          <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/backstage/reception/show.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1217">
+          <caret line="38" column="77" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/backstage/reception/desc.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1064">
+          <caret line="56" column="29" lean-forward="true" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/backstage/reception/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="64" column="33" lean-forward="true" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/backstage/category/show.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-951">
+          <caret line="38" column="77" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/backstage/category/desc.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="32" column="77" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsps/backstage/category/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="78" column="7" lean-forward="true" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
-          <last-edited>cloudplatform</last-edited>
+          <artifact-editor>
+            <show-content>
+              <type id="javaee-facet-resources" />
+              <type id="artifact" />
+              <type id="jpa-descriptors" />
+              <type id="library" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>baimu</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

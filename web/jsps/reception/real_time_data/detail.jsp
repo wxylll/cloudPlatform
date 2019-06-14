@@ -338,19 +338,23 @@
         for (var i = 1; i < selected.length; i++) {
             staffs += ',' + selected[i].ssid
         }
-        alert("123")
-        $.ajax({
-            url:'${pageContext.request.contextPath}/assign.action?staffs=' + staffs + "&eid=" + eid,
-            type:'get',
-            success:function(data){
-                if (data == 'succeed') {
-                    layer.msg("指派成功！",{offset:400})
-                    location.reload(true)
-                }else {
-                    layer.msg("指派失败！",{offset:400})
-                }
+        layer.confirm("确定要指派选中人员吗？",
+            {btn:['确定','取消']},
+            function () {
+                $.ajax({
+                    url:'${pageContext.request.contextPath}/assign.action?staffs=' + staffs + "&eid=" + eid,
+                    type:'get',
+                    success:function(data){
+                        if (data == 'succeed') {
+                            layer.msg("指派成功！",{offset:400})
+                            location.reload(true)
+                        }else {
+                            layer.msg("指派失败！",{offset:400})
+                        }
+                    }
+                })
             }
-        })
+        )
     }
 
 </script>
