@@ -128,9 +128,51 @@
     var date = [<c:forEach items="${tempDatas}" var="tempData">'${tempData.time}',</c:forEach>];
     var data = [<c:forEach items="${tempDatas}" var="tempData">'${tempData.now}',</c:forEach>];
     var eid = '${edgeTerminal.eid}';
-    //计算表格纵坐标最大值，以适应显示
-    var max = Math.max.apply(null,data);
-    max = max + max * 0.2
+
+    option = {
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: date
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        yAxis: {
+            boundaryGap: [0, '50%'],
+            type: 'value',
+            axisLine: {onZero: false}
+        },
+        grid: {
+            left: 0,
+            right: 19,
+            top: 0,
+            bottom: 0
+        },
+        series: [
+            {
+                name:'人数',
+                type:'line',
+                color: 'rgba(0,0,0,.3)',
+                areaStyle: {
+                    color: '#2894FF'
+                },
+                data: data,
+                markLine: {
+                    silent: true,
+                    symbol: 'none',
+                    lineStyle: {
+                        type: 'solid',
+                        color: 'red'
+                    },
+                    data: [{
+                        yAxis: parseInt('${edgeTerminal.threshold}')
+                    }]
+                }
+            }
+        ]
+    };
+    myChart.setOption(option);
 
     //获取ip
     var curWwwPath = window.document.location.href;
@@ -183,11 +225,12 @@
             if (content[2] == eid) { //是否推送给此页面
                 data.push(content[0]);
                 date.push(content[1]);
-                max = Math.max.apply(null,data);
-                document.getElementById('historyMax').innerText = max;
-                document.getElementById('nowNumber').innerText = content[0];
-                max = max + max * 0.2;
                 myChart.setOption(option);
+                var ele = document.getElementById('historyMax')
+                if (parseInt(ele.innerText) < parseInt(content[0])) {
+                    ele.innerText = content[0]
+                }
+                document.getElementById('nowNumber').innerText = content[0];
             }
         }
     };
@@ -199,53 +242,6 @@
     wc2.onclose = function(evt) {
         wc2 =new WebSocket(url2); //断开重连
     };
-
-
-    option = {
-        xAxis: {
-            type: 'category',
-            boundaryGap: false,
-            data: date
-        },
-        tooltip: {
-            trigger: 'axis'
-        },
-        yAxis: {
-            boundaryGap: [0, '50%'],
-            type: 'value',
-            max: max,
-            axisLine: {onZero: false}
-        },
-        grid: {
-            left: 0,
-            right: 19,
-            top: 0,
-            bottom: 0
-        },
-        series: [
-            {
-                name:'人数',
-                type:'line',
-                color: 'rgba(0,0,0,.3)',
-                areaStyle: {
-                    color: '#2894FF'
-                },
-                data: data,
-                markLine: {
-                    silent: true,
-                    symbol: 'none',
-                    lineStyle: {
-                        type: 'solid',
-                        color: 'red'
-                    },
-                    data: [{
-                        yAxis: parseInt('${edgeTerminal.threshold}')
-                    }]
-                }
-            }
-        ]
-    };
-    myChart.setOption(option);
 
     //计算持续时间
     setInterval("getLastTime();",1000);
@@ -292,7 +288,7 @@
         }
     }
 
-    var data = [<c:forEach items="${staffs}" var="staff">
+    var data8 = [<c:forEach items="${staffs}" var="staff">
         {"ssid":"${staff.ssid}",
             "name":"${staff.name}",
             "workPlace":"${staff.workPlace}",
@@ -307,7 +303,7 @@
         table.render({
             elem: '#edge_table'
             ,id:'t1'
-            ,data: data
+            ,data: data8
             ,initSort:{field:'time',type:'asc'}
             ,cols: [[ //表头
                 {field: 'name', title: '姓名',fixed: 'left'}
@@ -339,6 +335,7 @@
             staffs += ',' + selected[i].ssid
         }
         layer.confirm("确定要指派选中人员吗？",
+            {offset:100},
             {btn:['确定','取消']},
             function () {
                 $.ajax({

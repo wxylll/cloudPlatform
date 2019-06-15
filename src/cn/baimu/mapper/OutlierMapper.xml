@@ -21,7 +21,7 @@
         <if test="arg2!=null">
             and o.startTime &lt; #{arg2}
         </if>
-        order by startTime
+        order by startTime desc
     </select>
 
     <select id="countOutbreaks" parameterType="String" resultType="hashMap">
