@@ -10,24 +10,26 @@
 <html>
 <head>
     <title>login</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/login.css" type="text/css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/jsps/reception/login/login.css" type="text/css">
 </head>
 <body>
-    <center>
-    <div class="login_div">
-        <span>${loginError}</span>
-        <img id="logo" src="${pageContext.request.contextPath}/image/logo.png"/>
-        <form id="loginForm" action="<c:url value="/login.action"/>" method="post">
-            &nbsp;
-            <input id="username" name="username" type="text" placeholder="请输入用户名" value="" onfocus="getFocus(this.id);" onblur="noFocus(this.id);"  oninput="change(this.id)"/>
-            <span id="nameMsg"></span><br/>
+<div align="center">
+    <div id="background" class="wall"></div>
+    <div id="midground" class="wall"></div>
+    <div id="foreground" class="wall"></div>
+    <div style="position: absolute;z-index: 1000;width: 100%;height: 100%">
+        <div class="login_div">
+            <img id="logo" src="${pageContext.request.contextPath}/image/logo.png"/>
+            <form id="loginForm" action="<c:url value="/login.action"/>" method="post">
+                <span id="Msg" style="color: white">${loginError}</span><br/>
+                <input id="username" name="username" type="text" placeholder="请输入用户名" value="" onfocus="getFocus(this.id);" onblur="noFocus(this.id);"  oninput="change(this.id)"/>
 
-            <input id="password" name="password" type="text" placeholder="请输入密码" value="" onfocus="getFocus(this.id);" onblur="noFocus(this.id);" oninput="change(this.id)"/>
-            <span id="passwordMsg"></span>
-        </form>
-        <button  id="loginbutton" onclick="toSubmit()">登录</button>
+                <input id="password" name="password" type="text" placeholder="请输入密码" value="" onfocus="getFocus(this.id);" onblur="noFocus(this.id);" oninput="change(this.id)"/>
+            </form>
+            <button  id="loginbutton" onclick="toSubmit()">登录</button>
+        </div>
     </div>
-    </center>
+</div>
 </body>
 <script>
     function getFocus(id){
@@ -44,11 +46,11 @@
 
     function toSubmit() {
         if (document.getElementById('username').value.trim() == '')  {
-            document.getElementById('nameMsg').innerText = "用户名不能为空！";
+            document.getElementById('Msg').innerText = "用户名不能为空！";
             return false;
         }
         if (document.getElementById('password').value.trim() == '') {
-            document.getElementById('passwordMsg').innerText  = "密码不能为空！";
+            document.getElementById('Msg').innerText  = "密码不能为空！";
             return false;
         }
         document.getElementById('loginForm').submit();
@@ -57,15 +59,15 @@
     function change(id) {
         if(id == "username"){
             if (document.getElementById('username').value.trim() == '')  {
-                document.getElementById('nameMsg').innerText = "用户名不能为空！";
+                document.getElementById('Msg').innerText = "用户名不能为空！";
             }else {
-                document.getElementById('nameMsg').innerText = "";
+                document.getElementById('Msg').innerText = "";
             }
         }else {
             if (document.getElementById('password').value.trim() == '') {
-                document.getElementById('passwordMsg').innerText  = "密码不能为空！";
+                document.getElementById('Msg').innerText  = "密码不能为空！";
             }else {
-                document.getElementById('passwordMsg').innerText = "";
+                document.getElementById('Msg').innerText = "";
             }
         }
     }

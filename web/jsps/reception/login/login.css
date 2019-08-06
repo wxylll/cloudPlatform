@@ -1,0 +1,111 @@
+* { margin: 0; padding: 0; border: 0; font-family: 微软雅黑;}
+html,body{
+    margin: 0;
+}
+@-webkit-keyframes STAR-MOVE {
+    from {
+        background-position:0% 0%
+    }
+    to {
+        background-position: 600% 0%
+    }
+}
+@keyframes STAR-MOVE {
+    from {
+        background-position: 0% 0%
+    }
+    to {
+        background-position: 600% 0%
+    }
+}
+.wall{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+}
+div#background{
+    background: black url('img/background.png') repeat-x 5% 0%;
+    background-size: cover;
+    -webkit-animation: STAR-MOVE  200s linear infinite;
+    -moz-animation: STAR-MOVE  200s linear infinite;
+    -ms-animation: STAR-MOVE  200s linear infinite;
+    animation: STAR-MOVE  200s linear infinite;
+}
+div#midground{
+    background:url('img/midground.png')repeat 20% 0%;
+    z-index: 1;
+    -webkit-animation: STAR-MOVE  100s linear infinite;
+    -moz-animation: STAR-MOVE  100s linear infinite;
+    -ms-animation: STAR-MOVE  100s linear infinite;
+    animation: STAR-MOVE  100s linear infinite;
+}
+div#foreground{
+    background:url('img/foreground.png')repeat 35% 0%;
+    z-index: 2;
+    -webkit-animation: STAR-MOVE  50s linear infinite;
+    -moz-animation: STAR-MOVE  50s linear infinite;
+    -ms-animation: STAR-MOVE  50s linear infinite;
+    animation: STAR-MOVE  50s linear infinite;
+}
+
+.login_div{
+    display:block;
+    width: 450px;
+    height: 350px;
+    margin: 160px auto;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+#username{
+    margin-top: 2%;
+    margin-bottom:2%;
+    width:260px;
+    height:40px;
+    border-radius: 4px;
+    background: transparent;
+    outline: none;
+    border: 1px solid white;
+    caret-color:white;
+    color:white;
+}
+
+#password{
+    margin-top: 1%;
+    width:260px;
+    height:40px;
+    border-radius: 4px;
+    background: transparent;
+    outline: none;
+    border: 1px solid white;
+    caret-color:white;
+    color:white;
+}
+
+input::-webkit-input-placeholder{
+    text-align: center;
+    color:white;
+}
+
+#loginbutton{
+    margin-top: 3%;
+    width:260px;
+    height:40px;
+    border-radius: 4px;
+    border: none;
+    background: white;
+    color: cornflowerblue;
+}
+
+#logo{
+    margin-bottom: -30%;
+    width:60%;
+    height:50%;
+}
+
+#loginForm {
+    margin-top: 25%;
+}

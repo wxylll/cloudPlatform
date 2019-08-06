@@ -10,6 +10,15 @@ public class User {
     private String username; //用户名
     private String password; //密码
     private String jurisdiction; //管辖范围
+    private boolean isOnline; //是否在线
+
+    public boolean isOnline() {
+        return isOnline;
+    }
+
+    public void setOnline(boolean online) {
+        isOnline = online;
+    }
 
     public String getUid() {
         return uid;

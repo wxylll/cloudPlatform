@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="baimu">
+    <output-path>$PROJECT_DIR$/out/artifacts/baimu</output-path>
+    <root id="archive" name="baimu.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="cloudplatform" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="cloudplatform/web/Web" />
+    </root>
+  </artifact>
+</component>

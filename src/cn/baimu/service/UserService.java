@@ -18,9 +18,9 @@ public interface UserService {
 
     /**
      * 删除账号
-     * @param user
+     * @param uid
      */
-    public void delete(User user) throws Exception;
+    public void delete(String uid) throws Exception;
 
     /**
      * 查询所有已有账号
@@ -42,5 +42,27 @@ public interface UserService {
      * @return 登录成功即返回user详细信息，否则返回null
      */
     public User login(String username, String password);
+
+    /**
+     * 根据详细地址获取直辖用户（管辖范围包含该地点，且有最小管辖范围的用户）
+     * @return
+     * @throws Exception
+     */
+    public User findCrownUser(String position) throws Exception;
+
+    /**
+     * 更新用户信息
+     * @param user
+     * @throws Exception
+     */
+    public void update(User user) throws Exception;
+
+    /**
+     * 获取指定用户
+     * @param uid
+     * @return
+     * @throws Exception
+     */
+    public User get(String uid) throws Exception;
 
 }
